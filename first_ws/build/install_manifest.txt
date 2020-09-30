@@ -11,6 +11,10 @@
 /home/caesar/Desktop/ROS/first_ws/install/share/first_pkg/cmake/first_pkgConfig.cmake
 /home/caesar/Desktop/ROS/first_ws/install/share/first_pkg/cmake/first_pkgConfig-version.cmake
 /home/caesar/Desktop/ROS/first_ws/install/share/first_pkg/package.xml
+/home/caesar/Desktop/ROS/first_ws/install/lib/pkgconfig/learning_service.pc
+/home/caesar/Desktop/ROS/first_ws/install/share/learning_service/cmake/learning_serviceConfig.cmake
+/home/caesar/Desktop/ROS/first_ws/install/share/learning_service/cmake/learning_serviceConfig-version.cmake
+/home/caesar/Desktop/ROS/first_ws/install/share/learning_service/package.xml
 /home/caesar/Desktop/ROS/first_ws/install/share/learning_topic/msg/person.msg
 /home/caesar/Desktop/ROS/first_ws/install/share/learning_topic/cmake/learning_topic-msg-paths.cmake
 /home/caesar/Desktop/ROS/first_ws/install/include/learning_topic/person.h
