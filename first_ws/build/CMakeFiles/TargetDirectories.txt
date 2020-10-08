@@ -59,6 +59,7 @@
 /home/caesar/Desktop/ROS/first_ws/build/first_pkg/CMakeFiles/test.dir
 /home/caesar/Desktop/ROS/first_ws/build/learning_service/CMakeFiles/install/strip.dir
 /home/caesar/Desktop/ROS/first_ws/build/learning_service/CMakeFiles/install/local.dir
+/home/caesar/Desktop/ROS/first_ws/build/learning_service/CMakeFiles/turtle_command_server.dir
 /home/caesar/Desktop/ROS/first_ws/build/learning_service/CMakeFiles/turtlesim_generate_messages_cpp.dir
 /home/caesar/Desktop/ROS/first_ws/build/learning_service/CMakeFiles/geometry_msgs_generate_messages_py.dir
 /home/caesar/Desktop/ROS/first_ws/build/learning_service/CMakeFiles/geometry_msgs_generate_messages_cpp.dir

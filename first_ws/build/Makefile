@@ -480,6 +480,19 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named turtle_command_server
+
+# Build rule for target.
+turtle_command_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtle_command_server
+.PHONY : turtle_command_server
+
+# fast build rule for target.
+turtle_command_server/fast:
+	$(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/build
+.PHONY : turtle_command_server/fast
+
+#=============================================================================
 # Target rules for targets named turtlesim_generate_messages_cpp
 
 # Build rule for target.
@@ -932,6 +945,7 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... turtle_command_server"
 	@echo "... turtlesim_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_cpp"
