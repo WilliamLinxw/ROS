@@ -1,10 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 #####################################################################
 # Software License Agreement (BSD License)
 #
-# Copyright (c) 2013, Willow Garage
-# Copyright (c) 2014, Mike Purvis
+# Copyright (c) 2013, Willow Garage, Inc.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -34,23 +33,21 @@
 # ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-THIS_PACKAGE = "rosserial_chibios"
+THIS_PACKAGE = "rosserial_arduino"
 
 __usage__ = """
-make_libraries.py generates the ChibiOS rosserial library files. It
-requires the location of your ChibiOS project folder.
+make_libraries.py generates the Arduino rosserial library files.  It
+requires the location of your Arduino sketchbook/libraries folder.
 
-rosrun rosserial_chibios make_libraries.py <output_path>
+rosrun rosserial_arduino make_libraries.py <output_path>
 """
 
 import rospkg
-
 import rosserial_client
 from rosserial_client.make_library import *
 
 # for copying files
 import shutil
-import os.path
 
 ROS_TO_EMBEDDED_TYPES = {
     'bool'    :   ('bool',              1, PrimitiveDataType, []),
@@ -65,28 +62,31 @@ ROS_TO_EMBEDDED_TYPES = {
     'int64'   :   ('int64_t',           8, PrimitiveDataType, []),
     'uint64'  :   ('uint64_t',          8, PrimitiveDataType, []),
     'float32' :   ('float',             4, PrimitiveDataType, []),
-    'float64' :   ('double',            8, PrimitiveDataType, []),
+    'float64' :   ('float',             4, AVR_Float64DataType, []),
     'time'    :   ('ros::Time',         8, TimeDataType, ['ros/time']),
     'duration':   ('ros::Duration',     8, TimeDataType, ['ros/duration']),
     'string'  :   ('char*',             0, StringDataType, []),
     'Header'  :   ('std_msgs::Header',  0, MessageDataType, ['std_msgs/Header'])
 }
 
-# Enforce correct inputs
+# need correct inputs
 if (len(sys.argv) < 2):
     print(__usage__)
-    exit(1)
+    exit()
 
-# Sanitize output path
-output_path = os.path.join(sys.argv[1], "ros_lib")
-print("\nExporting to %s" % output_path)
+# get output path
+path = sys.argv[1]
+if path[-1] == "/":
+    path = path[0:-1]
+print("\nExporting to %s" % path)
 
 rospack = rospkg.RosPack()
 
-# copy non-generated ros_lib files
-shutil.rmtree(output_path, ignore_errors=True)
-shutil.copytree(os.path.join(rospack.get_path(THIS_PACKAGE), "src", "ros_lib"), output_path)
-rosserial_client_copy_files(rospack, output_path)
+# copy ros_lib stuff in
+rosserial_arduino_dir = rospack.get_path(THIS_PACKAGE)
+shutil.copytree(rosserial_arduino_dir+"/src/ros_lib", path+"/ros_lib")
+rosserial_client_copy_files(rospack, path+"/ros_lib/")
 
 # generate messages
-rosserial_generate(rospack, output_path, ROS_TO_EMBEDDED_TYPES)
+rosserial_generate(rospack, path+"/ros_lib", ROS_TO_EMBEDDED_TYPES)
+

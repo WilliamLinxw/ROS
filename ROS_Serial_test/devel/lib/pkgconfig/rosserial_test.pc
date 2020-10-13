@@ -2,7 +2,7 @@ prefix=/home/caesar/Desktop/ROS/ROS_Serial_test/devel
 
 Name: rosserial_test
 Description: Description of rosserial_test
-Version: 0.9.1
+Version: 0.8.0
 Cflags: 
 Libs: -L${prefix}/lib 
 Requires: rosserial_msgs std_msgs

@@ -75,16 +75,8 @@
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_arduino/src/ros_lib/examples/IrRanger/IrRanger.pde
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_arduino/arduino-cmake/cmake/Platform/Arduino.cmake
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_arduino/arduino-cmake/cmake/ArduinoToolchain.cmake
-/home/caesar/Desktop/ROS/ROS_Serial_test/install/lib/rosserial_arduino/make_libraries.py
-/home/caesar/Desktop/ROS/ROS_Serial_test/install/lib/rosserial_arduino/serial_node.py
-/home/caesar/Desktop/ROS/ROS_Serial_test/install/lib/pkgconfig/rosserial_chibios.pc
-/home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_chibios/cmake/rosserial_chibiosConfig.cmake
-/home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_chibios/cmake/rosserial_chibiosConfig-version.cmake
-/home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_chibios/package.xml
-/home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_chibios/src/ros_lib/ros.h
-/home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_chibios/src/ros_lib/ChibiOSHardware.h
-/home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_chibios/src/ros_lib/ros_lib.mk
-/home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_chibios/make_libraries.py
+/home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_arduino/make_libraries.py
+/home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_arduino/serial_node.py
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_mbed/msg/Adc.msg
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_mbed/srv/Test.srv
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_mbed/cmake/rosserial_mbed-msg-paths.cmake
@@ -318,6 +310,7 @@
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_test/cmake/rosserial_testConfig.cmake
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_test/cmake/rosserial_testConfig-version.cmake
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_test/package.xml
+/home/caesar/Desktop/ROS/ROS_Serial_test/install/lib/rosserial_test/generate_client_ros_lib
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/lib/pkgconfig/rosserial_windows.pc
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_windows/cmake/rosserial_windowsConfig.cmake
 /home/caesar/Desktop/ROS/ROS_Serial_test/install/share/rosserial_windows/cmake/rosserial_windowsConfig-version.cmake

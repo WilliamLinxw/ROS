@@ -68,18 +68,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -89,17 +77,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -134,6 +111,29 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -211,21 +211,6 @@ _run_tests_rosserial_client_gtest_float64_test: rosserial_client/CMakeFiles/_run
 _run_tests_rosserial_client_gtest_float64_test/fast:
 	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_float64_test.dir/build.make rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_float64_test.dir/build
 .PHONY : _run_tests_rosserial_client_gtest_float64_test/fast
-
-# Convenience name for target.
-rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_time_test.dir/rule:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f CMakeFiles/Makefile2 rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_time_test.dir/rule
-.PHONY : rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_time_test.dir/rule
-
-# Convenience name for target.
-_run_tests_rosserial_client_gtest_time_test: rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_time_test.dir/rule
-
-.PHONY : _run_tests_rosserial_client_gtest_time_test
-
-# fast build rule for target.
-_run_tests_rosserial_client_gtest_time_test/fast:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_time_test.dir/build.make rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_time_test.dir/build
-.PHONY : _run_tests_rosserial_client_gtest_time_test/fast
 
 # Convenience name for target.
 rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_float64_test.dir/rule:
@@ -347,90 +332,6 @@ _run_tests_rosserial_client_gtest_subscriber_test/fast:
 	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_subscriber_test.dir/build.make rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_subscriber_test.dir/build
 .PHONY : _run_tests_rosserial_client_gtest_subscriber_test/fast
 
-# Convenience name for target.
-rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_time_test.dir/rule:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f CMakeFiles/Makefile2 rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_time_test.dir/rule
-.PHONY : rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_time_test.dir/rule
-
-# Convenience name for target.
-run_tests_rosserial_client_gtest_time_test: rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_time_test.dir/rule
-
-.PHONY : run_tests_rosserial_client_gtest_time_test
-
-# fast build rule for target.
-run_tests_rosserial_client_gtest_time_test/fast:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_time_test.dir/build.make rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_time_test.dir/build
-.PHONY : run_tests_rosserial_client_gtest_time_test/fast
-
-# Convenience name for target.
-rosserial_client/CMakeFiles/time_test.dir/rule:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f CMakeFiles/Makefile2 rosserial_client/CMakeFiles/time_test.dir/rule
-.PHONY : rosserial_client/CMakeFiles/time_test.dir/rule
-
-# Convenience name for target.
-time_test: rosserial_client/CMakeFiles/time_test.dir/rule
-
-.PHONY : time_test
-
-# fast build rule for target.
-time_test/fast:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/time_test.dir/build.make rosserial_client/CMakeFiles/time_test.dir/build
-.PHONY : time_test/fast
-
-src/ros_lib/duration.o: src/ros_lib/duration.cpp.o
-
-.PHONY : src/ros_lib/duration.o
-
-# target to build an object file
-src/ros_lib/duration.cpp.o:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/time_test.dir/build.make rosserial_client/CMakeFiles/time_test.dir/src/ros_lib/duration.cpp.o
-.PHONY : src/ros_lib/duration.cpp.o
-
-src/ros_lib/duration.i: src/ros_lib/duration.cpp.i
-
-.PHONY : src/ros_lib/duration.i
-
-# target to preprocess a source file
-src/ros_lib/duration.cpp.i:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/time_test.dir/build.make rosserial_client/CMakeFiles/time_test.dir/src/ros_lib/duration.cpp.i
-.PHONY : src/ros_lib/duration.cpp.i
-
-src/ros_lib/duration.s: src/ros_lib/duration.cpp.s
-
-.PHONY : src/ros_lib/duration.s
-
-# target to generate assembly for a file
-src/ros_lib/duration.cpp.s:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/time_test.dir/build.make rosserial_client/CMakeFiles/time_test.dir/src/ros_lib/duration.cpp.s
-.PHONY : src/ros_lib/duration.cpp.s
-
-src/ros_lib/time.o: src/ros_lib/time.cpp.o
-
-.PHONY : src/ros_lib/time.o
-
-# target to build an object file
-src/ros_lib/time.cpp.o:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/time_test.dir/build.make rosserial_client/CMakeFiles/time_test.dir/src/ros_lib/time.cpp.o
-.PHONY : src/ros_lib/time.cpp.o
-
-src/ros_lib/time.i: src/ros_lib/time.cpp.i
-
-.PHONY : src/ros_lib/time.i
-
-# target to preprocess a source file
-src/ros_lib/time.cpp.i:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/time_test.dir/build.make rosserial_client/CMakeFiles/time_test.dir/src/ros_lib/time.cpp.i
-.PHONY : src/ros_lib/time.cpp.i
-
-src/ros_lib/time.s: src/ros_lib/time.cpp.s
-
-.PHONY : src/ros_lib/time.s
-
-# target to generate assembly for a file
-src/ros_lib/time.cpp.s:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/time_test.dir/build.make rosserial_client/CMakeFiles/time_test.dir/src/ros_lib/time.cpp.s
-.PHONY : src/ros_lib/time.cpp.s
-
 test/float64_test.o: test/float64_test.cpp.o
 
 .PHONY : test/float64_test.o
@@ -485,33 +386,6 @@ test/subscriber_test.cpp.s:
 	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/subscriber_test.dir/build.make rosserial_client/CMakeFiles/subscriber_test.dir/test/subscriber_test.cpp.s
 .PHONY : test/subscriber_test.cpp.s
 
-test/time_test.o: test/time_test.cpp.o
-
-.PHONY : test/time_test.o
-
-# target to build an object file
-test/time_test.cpp.o:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/time_test.dir/build.make rosserial_client/CMakeFiles/time_test.dir/test/time_test.cpp.o
-.PHONY : test/time_test.cpp.o
-
-test/time_test.i: test/time_test.cpp.i
-
-.PHONY : test/time_test.i
-
-# target to preprocess a source file
-test/time_test.cpp.i:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/time_test.dir/build.make rosserial_client/CMakeFiles/time_test.dir/test/time_test.cpp.i
-.PHONY : test/time_test.cpp.i
-
-test/time_test.s: test/time_test.cpp.s
-
-.PHONY : test/time_test.s
-
-# target to generate assembly for a file
-test/time_test.cpp.s:
-	cd /home/caesar/Desktop/ROS/ROS_Serial_test/build && $(MAKE) -f rosserial_client/CMakeFiles/time_test.dir/build.make rosserial_client/CMakeFiles/time_test.dir/test/time_test.cpp.s
-.PHONY : test/time_test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -519,41 +393,29 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/local"
-	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
 	@echo "... _run_tests_rosserial_client"
 	@echo "... float64_test"
 	@echo "... _run_tests_rosserial_client_gtest_float64_test"
-	@echo "... _run_tests_rosserial_client_gtest_time_test"
 	@echo "... run_tests_rosserial_client_gtest_float64_test"
 	@echo "... run_tests_rosserial_client_gtest"
 	@echo "... _run_tests_rosserial_client_gtest"
+	@echo "... list_install_components"
 	@echo "... run_tests_rosserial_client"
 	@echo "... run_tests_rosserial_client_gtest_subscriber_test"
 	@echo "... install/strip"
 	@echo "... clean_test_results_rosserial_client"
 	@echo "... subscriber_test"
 	@echo "... _run_tests_rosserial_client_gtest_subscriber_test"
-	@echo "... run_tests_rosserial_client_gtest_time_test"
-	@echo "... time_test"
 	@echo "... test"
 	@echo "... edit_cache"
-	@echo "... src/ros_lib/duration.o"
-	@echo "... src/ros_lib/duration.i"
-	@echo "... src/ros_lib/duration.s"
-	@echo "... src/ros_lib/time.o"
-	@echo "... src/ros_lib/time.i"
-	@echo "... src/ros_lib/time.s"
+	@echo "... rebuild_cache"
+	@echo "... install"
 	@echo "... test/float64_test.o"
 	@echo "... test/float64_test.i"
 	@echo "... test/float64_test.s"
 	@echo "... test/subscriber_test.o"
 	@echo "... test/subscriber_test.i"
 	@echo "... test/subscriber_test.s"
-	@echo "... test/time_test.o"
-	@echo "... test/time_test.i"
-	@echo "... test/time_test.s"
 .PHONY : help
 
 

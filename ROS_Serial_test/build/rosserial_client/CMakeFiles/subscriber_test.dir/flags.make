@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1
 
-CXX_INCLUDES = -I/home/caesar/Desktop/ROS/ROS_Serial_test/src/rosserial_client/src/ros_lib -I/home/caesar/Desktop/ROS/ROS_Serial_test/devel/include -I/opt/ros/melodic/include -I/usr/src/googletest/googletest/include 
+CXX_INCLUDES = -I/home/caesar/Desktop/ROS/ROS_Serial_test/src/rosserial_client/src -I/home/caesar/Desktop/ROS/ROS_Serial_test/devel/include -I/opt/ros/melodic/include -I/usr/src/googletest/googletest/include 
 

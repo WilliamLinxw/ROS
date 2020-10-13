@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "rosserial_embeddedlinux"
 PROJECT_SPACE_DIR = "/home/caesar/Desktop/ROS/ROS_Serial_test/devel"
-PROJECT_VERSION = "0.9.1"
+PROJECT_VERSION = "0.8.0"

@@ -7,7 +7,6 @@
 subdirs("gtest")
 subdirs("rosserial")
 subdirs("rosserial_arduino")
-subdirs("rosserial_chibios")
 subdirs("rosserial_mbed")
 subdirs("rosserial_msgs")
 subdirs("rosserial_python")

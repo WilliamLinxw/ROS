@@ -2,7 +2,7 @@ prefix=/home/caesar/Desktop/ROS/ROS_Serial_test/install
 
 Name: rosserial_windows
 Description: Description of rosserial_windows
-Version: 0.9.1
+Version: 0.8.0
 Cflags: 
 Libs: -L${prefix}/lib 
 Requires: 

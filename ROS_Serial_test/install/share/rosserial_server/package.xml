@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<package format="2">
+<package>
   <name>rosserial_server</name>
-  <version>0.9.1</version>
+  <version>0.8.0</version>
   <description>
     A more performance- and stability-oriented server alternative implemented
     in C++ to rosserial_python.
@@ -13,10 +13,12 @@
   <license>BSD</license>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <depend>rosserial_msgs</depend>
-  <depend>std_msgs</depend>
-  <depend>roscpp</depend>
-  <depend>topic_tools</depend>
-  <build_depend>libboost-thread-dev</build_depend>
-  <exec_depend>libboost-thread</exec_depend>
+  <build_depend>rosserial_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>topic_tools</build_depend>
+  <run_depend>rosserial_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>topic_tools</run_depend>
 </package>

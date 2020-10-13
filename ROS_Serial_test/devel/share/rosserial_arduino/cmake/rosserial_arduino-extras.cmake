@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.7.2)
+cmake_minimum_required(VERSION 2.8.3)
 
 set(ROSSERIAL_ARDUINO_TOOLCHAIN "/home/caesar/Desktop/ROS/ROS_Serial_test/src/rosserial_arduino/arduino-cmake/cmake/ArduinoToolchain.cmake")
 

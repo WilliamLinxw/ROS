@@ -112,10 +112,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_arduino" TYPE PROGRAM FILES "/home/caesar/Desktop/ROS/ROS_Serial_test/build/rosserial_arduino/catkin_generated/installspace/make_libraries.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_arduino" TYPE PROGRAM FILES "/home/caesar/Desktop/ROS/ROS_Serial_test/build/rosserial_arduino/catkin_generated/installspace/make_libraries.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_arduino" TYPE PROGRAM FILES "/home/caesar/Desktop/ROS/ROS_Serial_test/build/rosserial_arduino/catkin_generated/installspace/serial_node.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_arduino" TYPE PROGRAM FILES "/home/caesar/Desktop/ROS/ROS_Serial_test/build/rosserial_arduino/catkin_generated/installspace/serial_node.py")
 endif()
 

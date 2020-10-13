@@ -52,3 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_test" TYPE FILE FILES "/home/caesar/Desktop/ROS/ROS_Serial_test/src/rosserial_test/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_test" TYPE PROGRAM FILES "/home/caesar/Desktop/ROS/ROS_Serial_test/build/rosserial_test/catkin_generated/installspace/generate_client_ros_lib")
+endif()
+
