@@ -1,8 +1,0 @@
-prefix=/home/caesar/Desktop/ROS/catkin_stm32_ws/install
-
-Name: rosserial_stm32
-Description: Description of rosserial_stm32
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: message_runtime
