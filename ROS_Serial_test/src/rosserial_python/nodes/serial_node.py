@@ -88,16 +88,25 @@ if __name__=="__main__":
                 client = SerialClient(port_name, baud, fix_pyserial_for_test=fix_pyserial_for_test)
                 client.run()
             except KeyboardInterrupt:
-                break
+                rospy.loginfo("got keyboard interrupt")
+                continue
             except SerialException:
                 sleep(1.0)
                 continue
             except OSError:
                 sleep(1.0)
                 continue
-            except:
-                rospy.logwarn("Unexpected Error.%s", sys.exc_info()[0])
-                client.port.close()
-                sleep(1.0)
-                continue
+            # except:
+            #     rospy.logwarn("Unexpected Error.%s", sys.exc_info()[0])
+            #     client.port.close()
+            #     sleep(1.0)
+            #     # continue
+            #     # break
+            finally:
+                rospy.loginfo("Shutting down")
+                for process in multiprocessing.active_children():
+                    rospy.loginfo("Shutting down process %r", process)
+                    process.terminate()
+                    process.join()
+                rospy.loginfo("All done")           
 
