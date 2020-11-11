@@ -1,9 +1,0 @@
-/home/caesar/Desktop/ROS/catkin_stm32_ws/install/_setup_util.py
-/home/caesar/Desktop/ROS/catkin_stm32_ws/install/env.sh
-/home/caesar/Desktop/ROS/catkin_stm32_ws/install/setup.bash
-/home/caesar/Desktop/ROS/catkin_stm32_ws/install/local_setup.bash
-/home/caesar/Desktop/ROS/catkin_stm32_ws/install/setup.sh
-/home/caesar/Desktop/ROS/catkin_stm32_ws/install/local_setup.sh
-/home/caesar/Desktop/ROS/catkin_stm32_ws/install/setup.zsh
-/home/caesar/Desktop/ROS/catkin_stm32_ws/install/local_setup.zsh
-/home/caesar/Desktop/ROS/catkin_stm32_ws/install/.rosinstall
