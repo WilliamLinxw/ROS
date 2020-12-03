@@ -1,0 +1,6 @@
+devel_space: /home/caesar/Desktop/ROS/ws_moveit/devel
+install: false
+install_space: /home/caesar/Desktop/ROS/ws_moveit/install
+profile: default
+source_space: /home/caesar/Desktop/ROS/ws_moveit/src
+workspace: /home/caesar/Desktop/ROS/ws_moveit
