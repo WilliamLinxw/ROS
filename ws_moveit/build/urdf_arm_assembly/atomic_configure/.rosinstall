@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/caesar/Desktop/ROS/ws_moveit/devel/.private/urdf_arm_assembly/setup.sh

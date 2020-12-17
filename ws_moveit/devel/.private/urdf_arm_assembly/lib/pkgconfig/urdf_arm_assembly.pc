@@ -1,0 +1,8 @@
+prefix=/home/caesar/Desktop/ROS/ws_moveit/devel/.private/urdf_arm_assembly
+
+Name: urdf_arm_assembly
+Description: Description of urdf_arm_assembly
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,1 @@
+/home/caesar/Desktop/ROS/ws_moveit/devel/.private/urdf_arm_assembly/share/urdf_arm_assembly/cmake/urdf_arm_assemblyConfig.cmake
