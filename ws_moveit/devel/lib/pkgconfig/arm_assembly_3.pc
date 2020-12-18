@@ -1,0 +1,1 @@
+/home/caesar/Desktop/ROS/ws_moveit/devel/.private/arm_assembly_3/lib/pkgconfig/arm_assembly_3.pc

@@ -1,0 +1,1 @@
+/home/caesar/Desktop/ROS/ws_moveit/devel/.private/arm_assembly_3/share/arm_assembly_3/cmake/arm_assembly_3Config-version.cmake
