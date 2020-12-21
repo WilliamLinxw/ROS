@@ -1,0 +1,8 @@
+prefix=/home/caesar/Desktop/ROS/ws_moveit/devel/.private/arm_assembly_3_moveit_config
+
+Name: arm_assembly_3_moveit_config
+Description: Description of arm_assembly_3_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
