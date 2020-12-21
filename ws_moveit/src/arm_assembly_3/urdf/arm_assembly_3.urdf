@@ -6,7 +6,7 @@
   name="arm_assembly_3">
   <link
     name="base_link">
-    <!-- <inertial>
+    <inertial>
       <origin
         xyz="0.00537914192717504 -0.0200099819447371 -0.0202923199399593"
         rpy="0 0 0" />
@@ -20,7 +20,6 @@
         iyz="-8.0891965519516E-08"
         izz="5.4827831046489E-06" />
     </inertial>
-    -->
     <visual>
       <origin
         xyz="0 0 0"
@@ -210,7 +209,7 @@
     <parent
       link="link2" />
     <child
-      link="link3" />
+      link="link3"/>
     <axis
       xyz="0 0 1" />
     <limit
