@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/caesar/Desktop/ROS/ws_moveit/build/arm_assembly_4_moveit_config_1/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_af4ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_af4ef.dir/build.make CMakeFiles/cmTC_af4ef.dir/build
+make[1]: Entering directory '/home/caesar/Desktop/ROS/ws_moveit/build/arm_assembly_4_moveit_config_1/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af4ef.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_af4ef.dir/CheckSymbolExists.c.o   -c /home/caesar/Desktop/ROS/ws_moveit/build/arm_assembly_4_moveit_config_1/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_af4ef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af4ef.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_af4ef.dir/CheckSymbolExists.c.o  -o cmTC_af4ef 
+CMakeFiles/cmTC_af4ef.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_af4ef.dir/build.make:97: recipe for target 'cmTC_af4ef' failed
+make[1]: *** [cmTC_af4ef] Error 1
+make[1]: Leaving directory '/home/caesar/Desktop/ROS/ws_moveit/build/arm_assembly_4_moveit_config_1/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_af4ef/fast' failed
+make: *** [cmTC_af4ef/fast] Error 2
+
+File /home/caesar/Desktop/ROS/ws_moveit/build/arm_assembly_4_moveit_config_1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/caesar/Desktop/ROS/ws_moveit/build/arm_assembly_4_moveit_config_1/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bdcff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bdcff.dir/build.make CMakeFiles/cmTC_bdcff.dir/build
+make[1]: Entering directory '/home/caesar/Desktop/ROS/ws_moveit/build/arm_assembly_4_moveit_config_1/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bdcff.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_bdcff.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bdcff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdcff.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_bdcff.dir/CheckFunctionExists.c.o  -o cmTC_bdcff -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bdcff.dir/build.make:97: recipe for target 'cmTC_bdcff' failed
+make[1]: *** [cmTC_bdcff] Error 1
+make[1]: Leaving directory '/home/caesar/Desktop/ROS/ws_moveit/build/arm_assembly_4_moveit_config_1/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bdcff/fast' failed
+make: *** [cmTC_bdcff/fast] Error 2
+
+
