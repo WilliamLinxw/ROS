@@ -1,0 +1,1 @@
+/home/caesar/Desktop/ROS/ws_moveit/devel/.private/arm_assembly_4_moveit_config/share/arm_assembly_4_moveit_config/cmake/arm_assembly_4_moveit_configConfig.cmake
