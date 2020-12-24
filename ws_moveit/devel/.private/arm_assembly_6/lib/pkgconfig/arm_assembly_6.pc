@@ -1,0 +1,8 @@
+prefix=/home/caesar/Desktop/ROS/ws_moveit/devel/.private/arm_assembly_6
+
+Name: arm_assembly_6
+Description: Description of arm_assembly_6
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
