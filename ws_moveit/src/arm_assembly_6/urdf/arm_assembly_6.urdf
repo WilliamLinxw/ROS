@@ -44,24 +44,6 @@
       </geometry>
     </collision>
   </link>
-  <joint
-    name="joint1"
-    type="revolute">
-    <origin
-      xyz="0.043 0.010099 -0.010156"
-      rpy="-1.5708 1.567 -1.5708" />
-    <parent
-      link="base_link" />
-    <child
-      link="link1" />
-    <axis
-      xyz="0 0 -1" />
-    <limit
-      lower="0"
-      upper="3.1415"
-      effort="0"
-      velocity="0" />
-  </joint>
   <link
     name="link1">
     <inertial>
@@ -165,7 +147,7 @@
     type="revolute">
     <origin
       xyz="-0.00052573 0.032998 0.027656"
-      rpy="1.5746 -1.5708 0" />
+      rpy="-1.5746 -1.5708 0" />
     <parent
       link="link1" />
     <child
