@@ -16,7 +16,7 @@ CATKIN_PACKAGE_BIN_DESTINATION = 'lib/rosserial_arduino'
 CATKIN_PACKAGE_ETC_DESTINATION = 'etc/rosserial_arduino'
 CATKIN_PACKAGE_INCLUDE_DESTINATION = 'include/rosserial_arduino'
 CATKIN_PACKAGE_LIB_DESTINATION = 'lib'
-CATKIN_PACKAGE_LIBEXEC_DESTINATION = ''
+CATKIN_PACKAGE_LIBEXEC_DESTINATION = 'lib/rosserial_arduino'
 CATKIN_PACKAGE_PYTHON_DESTINATION = 'lib/python2.7/dist-packages/rosserial_arduino'
 CATKIN_PACKAGE_SHARE_DESTINATION = 'share/rosserial_arduino'
 

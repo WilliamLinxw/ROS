@@ -9,4 +9,4 @@ controller_list:
       - joint6
 initial:  # Define initial robot poses.
   - group: arm_assembly_4
-    pose: zero_position
+    pose: home

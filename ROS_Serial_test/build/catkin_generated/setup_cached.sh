@@ -9,7 +9,7 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/caesar/Desktop/ROS/ROS_Serial_test/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/caesar/Desktop/ROS/ROS_Serial_test/devel/lib:$LD_LIBRARY_PATH"
-export PATH='/home/caesar/Desktop/ROS/ROS_Serial_test/devel/bin:/opt/ros/melodic/bin:/home/caesar/Desktop/ROS/ROS_Serial_test/venv/bin:/home/caesar/.local/share/umake/bin:/home/caesar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+export PATH="/home/caesar/Desktop/ROS/ROS_Serial_test/devel/bin:$PATH"
 export PKG_CONFIG_PATH="/home/caesar/Desktop/ROS/ROS_Serial_test/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/caesar/Desktop/ROS/ROS_Serial_test/build'
 export PYTHONPATH="/home/caesar/Desktop/ROS/ROS_Serial_test/devel/lib/python2.7/dist-packages:$PYTHONPATH"
