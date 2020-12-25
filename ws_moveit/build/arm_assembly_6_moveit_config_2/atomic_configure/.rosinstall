@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/caesar/Desktop/ROS/ws_moveit/devel/.private/arm_assembly_6_moveit_config_2/setup.sh
