@@ -1,0 +1,8 @@
+prefix=/home/caesar/Desktop/ROS/xarm_ws/devel
+
+Name: xarm_api
+Description: Description of xarm_api
+Version: 0.0.0
+Cflags: -I/home/caesar/Desktop/ROS/xarm_ws/src/xarm_api/include
+Libs: -L${prefix}/lib -lxarm_api -lxarm_ros_client
+Requires: roscpp std_msgs
