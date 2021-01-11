@@ -2003,6 +2003,353 @@ clean: xarm_msgs/CMakeFiles/xarm_msgs_genpy.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory xarm7_circle
+
+# Convenience name for "all" pass in the directory.
+xarm7_circle/all:
+
+.PHONY : xarm7_circle/all
+
+# Convenience name for "clean" pass in the directory.
+xarm7_circle/clean: xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+xarm7_circle/clean: xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+xarm7_circle/clean: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+xarm7_circle/clean: xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+xarm7_circle/clean: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+xarm7_circle/clean: xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/clean
+xarm7_circle/clean: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+xarm7_circle/clean: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+xarm7_circle/clean: xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+xarm7_circle/clean: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+
+.PHONY : xarm7_circle/clean
+
+# Convenience name for "preinstall" pass in the directory.
+xarm7_circle/preinstall:
+
+.PHONY : xarm7_circle/preinstall
+
+#=============================================================================
+# Target rules for target xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir
+
+# All Build rule for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_nodejs: xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+.PHONY : roscpp_generate_messages_nodejs
+
+# clean rule for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir
+
+# All Build rule for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/all:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/depend
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+.PHONY : roscpp_generate_messages_eus
+
+# clean rule for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# clean rule for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir
+
+# All Build rule for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# clean rule for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# clean rule for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir
+
+# All Build rule for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# clean rule for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# clean rule for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# clean rule for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir
+
+# All Build rule for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+.PHONY : roscpp_generate_messages_lisp
+
+# clean rule for target.
+xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# clean rule for target.
+xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+.PHONY : xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory examples/xarm7_redundancy_res
 
 # Convenience name for "all" pass in the directory.
@@ -2024,49 +2371,39 @@ examples/xarm7_redundancy_res/preinstall:
 # Directory level rules for directory xarm_api
 
 # Convenience name for "all" pass in the directory.
+xarm_api/all: xarm_api/CMakeFiles/servo_cart_test.dir/all
+xarm_api/all: xarm_api/CMakeFiles/test_tool_modbus.dir/all
+xarm_api/all: xarm_api/CMakeFiles/move_test.dir/all
+xarm_api/all: xarm_api/CMakeFiles/example1_report_norm_node.dir/all
+xarm_api/all: xarm_api/CMakeFiles/xarm_api.dir/all
 xarm_api/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
 xarm_api/all: xarm_api/CMakeFiles/xarm_driver_node.dir/all
-xarm_api/all: xarm_api/CMakeFiles/xarm_api.dir/all
-xarm_api/all: xarm_api/CMakeFiles/example1_report_norm_node.dir/all
-xarm_api/all: xarm_api/CMakeFiles/move_test.dir/all
-xarm_api/all: xarm_api/CMakeFiles/test_tool_modbus.dir/all
-xarm_api/all: xarm_api/CMakeFiles/servo_cart_test.dir/all
 
 .PHONY : xarm_api/all
 
 # Convenience name for "clean" pass in the directory.
-xarm_api/clean: xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/servo_cart_test.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/test_tool_modbus.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/move_test.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/example1_report_norm_node.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 xarm_api/clean: xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/xarm_api.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/clean
 xarm_api/clean: xarm_api/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/xarm_ros_client.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 xarm_api/clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 xarm_api/clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
 xarm_api/clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/xarm_ros_client.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 xarm_api/clean: xarm_api/CMakeFiles/xarm_driver_node.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+xarm_api/clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 xarm_api/clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/xarm_api.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/example1_report_norm_node.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/move_test.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/test_tool_modbus.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-xarm_api/clean: xarm_api/CMakeFiles/servo_cart_test.dir/clean
 
 .PHONY : xarm_api/clean
 
@@ -2076,130 +2413,183 @@ xarm_api/preinstall:
 .PHONY : xarm_api/preinstall
 
 #=============================================================================
-# Target rules for target xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir
+# Target rules for target xarm_api/CMakeFiles/servo_cart_test.dir
 
 # All Build rule for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_cpp"
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+xarm_api/CMakeFiles/servo_cart_test.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
+	$(MAKE) -f xarm_api/CMakeFiles/servo_cart_test.dir/build.make xarm_api/CMakeFiles/servo_cart_test.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/servo_cart_test.dir/build.make xarm_api/CMakeFiles/servo_cart_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=10 "Built target servo_cart_test"
+.PHONY : xarm_api/CMakeFiles/servo_cart_test.dir/all
+
+# Include target in all.
+all: xarm_api/CMakeFiles/servo_cart_test.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule: cmake_check_build_system
+xarm_api/CMakeFiles/servo_cart_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 54
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/servo_cart_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : xarm_api/CMakeFiles/servo_cart_test.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_cpp: xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+servo_cart_test: xarm_api/CMakeFiles/servo_cart_test.dir/rule
 
-.PHONY : std_srvs_generate_messages_cpp
-
-# clean rule for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+.PHONY : servo_cart_test
 
 # clean rule for target.
-clean: xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+xarm_api/CMakeFiles/servo_cart_test.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/servo_cart_test.dir/build.make xarm_api/CMakeFiles/servo_cart_test.dir/clean
+.PHONY : xarm_api/CMakeFiles/servo_cart_test.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/servo_cart_test.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir
+# Target rules for target xarm_api/CMakeFiles/test_tool_modbus.dir
 
 # All Build rule for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_py"
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/all
+xarm_api/CMakeFiles/test_tool_modbus.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
+xarm_api/CMakeFiles/test_tool_modbus.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
+	$(MAKE) -f xarm_api/CMakeFiles/test_tool_modbus.dir/build.make xarm_api/CMakeFiles/test_tool_modbus.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/test_tool_modbus.dir/build.make xarm_api/CMakeFiles/test_tool_modbus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=11 "Built target test_tool_modbus"
+.PHONY : xarm_api/CMakeFiles/test_tool_modbus.dir/all
+
+# Include target in all.
+all: xarm_api/CMakeFiles/test_tool_modbus.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/rule: cmake_check_build_system
+xarm_api/CMakeFiles/test_tool_modbus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 55
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/test_tool_modbus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : xarm_api/CMakeFiles/test_tool_modbus.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_py: xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+test_tool_modbus: xarm_api/CMakeFiles/test_tool_modbus.dir/rule
 
-.PHONY : std_srvs_generate_messages_py
-
-# clean rule for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/clean
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+.PHONY : test_tool_modbus
 
 # clean rule for target.
-clean: xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+xarm_api/CMakeFiles/test_tool_modbus.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/test_tool_modbus.dir/build.make xarm_api/CMakeFiles/test_tool_modbus.dir/clean
+.PHONY : xarm_api/CMakeFiles/test_tool_modbus.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/test_tool_modbus.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target xarm_api/CMakeFiles/move_test.dir
 
 # All Build rule for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+xarm_api/CMakeFiles/move_test.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
+	$(MAKE) -f xarm_api/CMakeFiles/move_test.dir/build.make xarm_api/CMakeFiles/move_test.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/move_test.dir/build.make xarm_api/CMakeFiles/move_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=8 "Built target move_test"
+.PHONY : xarm_api/CMakeFiles/move_test.dir/all
+
+# Include target in all.
+all: xarm_api/CMakeFiles/move_test.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+xarm_api/CMakeFiles/move_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 54
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/move_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : xarm_api/CMakeFiles/move_test.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+move_test: xarm_api/CMakeFiles/move_test.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# clean rule for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : move_test
 
 # clean rule for target.
-clean: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+xarm_api/CMakeFiles/move_test.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/move_test.dir/build.make xarm_api/CMakeFiles/move_test.dir/clean
+.PHONY : xarm_api/CMakeFiles/move_test.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/move_test.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+# Target rules for target xarm_api/CMakeFiles/example1_report_norm_node.dir
 
 # All Build rule for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+xarm_api/CMakeFiles/example1_report_norm_node.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
+	$(MAKE) -f xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make xarm_api/CMakeFiles/example1_report_norm_node.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make xarm_api/CMakeFiles/example1_report_norm_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target example1_report_norm_node"
+.PHONY : xarm_api/CMakeFiles/example1_report_norm_node.dir/all
+
+# Include target in all.
+all: xarm_api/CMakeFiles/example1_report_norm_node.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+xarm_api/CMakeFiles/example1_report_norm_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 53
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/example1_report_norm_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+example1_report_norm_node: xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# clean rule for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : example1_report_norm_node
 
 # clean rule for target.
-clean: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+xarm_api/CMakeFiles/example1_report_norm_node.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make xarm_api/CMakeFiles/example1_report_norm_node.dir/clean
+.PHONY : xarm_api/CMakeFiles/example1_report_norm_node.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/example1_report_norm_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# clean rule for target.
+xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 .PHONY : clean
 
@@ -2236,34 +2626,137 @@ clean: xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+sensor_msgs_generate_messages_nodejs: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# clean rule for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : sensor_msgs_generate_messages_nodejs
 
 # clean rule for target.
-clean: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm_api/CMakeFiles/xarm_api.dir
+
+# All Build rule for target.
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(MAKE) -f xarm_api/CMakeFiles/xarm_api.dir/build.make xarm_api/CMakeFiles/xarm_api.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/xarm_api.dir/build.make xarm_api/CMakeFiles/xarm_api.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=12,13,14,15,16,17 "Built target xarm_api"
+.PHONY : xarm_api/CMakeFiles/xarm_api.dir/all
+
+# Include target in all.
+all: xarm_api/CMakeFiles/xarm_api.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+xarm_api/CMakeFiles/xarm_api.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 53
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_api.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm_api/CMakeFiles/xarm_api.dir/rule
+
+# Convenience name for target.
+xarm_api: xarm_api/CMakeFiles/xarm_api.dir/rule
+
+.PHONY : xarm_api
+
+# clean rule for target.
+xarm_api/CMakeFiles/xarm_api.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/xarm_api.dir/build.make xarm_api/CMakeFiles/xarm_api.dir/clean
+.PHONY : xarm_api/CMakeFiles/xarm_api.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/xarm_api.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir
+
+# All Build rule for target.
+xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/all:
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_py"
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_py: xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+.PHONY : std_srvs_generate_messages_py
+
+# clean rule for target.
+xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/clean
 
 .PHONY : clean
 
@@ -2300,34 +2793,167 @@ clean: xarm_api/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+# Target rules for target xarm_api/CMakeFiles/xarm_ros_client.dir
 
 # All Build rule for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+xarm_api/CMakeFiles/xarm_ros_client.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f xarm_api/CMakeFiles/xarm_ros_client.dir/build.make xarm_api/CMakeFiles/xarm_ros_client.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/xarm_ros_client.dir/build.make xarm_api/CMakeFiles/xarm_ros_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=97 "Built target xarm_ros_client"
+.PHONY : xarm_api/CMakeFiles/xarm_ros_client.dir/all
+
+# Include target in all.
+all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+xarm_api/CMakeFiles/xarm_ros_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_ros_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : xarm_api/CMakeFiles/xarm_ros_client.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+xarm_ros_client: xarm_api/CMakeFiles/xarm_ros_client.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# clean rule for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : xarm_ros_client
 
 # clean rule for target.
-clean: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+xarm_api/CMakeFiles/xarm_ros_client.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/xarm_ros_client.dir/build.make xarm_api/CMakeFiles/xarm_ros_client.dir/clean
+.PHONY : xarm_api/CMakeFiles/xarm_ros_client.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/xarm_ros_client.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# clean rule for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir
+
+# All Build rule for target.
+xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/all:
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_eus"
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_eus: xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+.PHONY : std_srvs_generate_messages_eus
+
+# clean rule for target.
+xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir
+
+# All Build rule for target.
+xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/all:
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_cpp"
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_cpp: xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+.PHONY : std_srvs_generate_messages_cpp
+
+# clean rule for target.
+xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# clean rule for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 
 .PHONY : clean
 
@@ -2396,198 +3022,6 @@ clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# clean rule for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/roscpp_generate_messages_py.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# clean rule for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# clean rule for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# clean rule for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_eus: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_eus
-
-# clean rule for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_eus"
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_eus: xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-.PHONY : std_srvs_generate_messages_eus
-
-# clean rule for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -2616,235 +3050,6 @@ xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# clean rule for target.
-xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
-.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_nodejs: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# clean rule for target.
-xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
-.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/xarm_ros_client.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/xarm_ros_client.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/all
-	$(MAKE) -f xarm_api/CMakeFiles/xarm_ros_client.dir/build.make xarm_api/CMakeFiles/xarm_ros_client.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/xarm_ros_client.dir/build.make xarm_api/CMakeFiles/xarm_ros_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=97 "Built target xarm_ros_client"
-.PHONY : xarm_api/CMakeFiles/xarm_ros_client.dir/all
-
-# Include target in all.
-all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/xarm_ros_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_ros_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/xarm_ros_client.dir/rule
-
-# Convenience name for target.
-xarm_ros_client: xarm_api/CMakeFiles/xarm_ros_client.dir/rule
-
-.PHONY : xarm_ros_client
-
-# clean rule for target.
-xarm_api/CMakeFiles/xarm_ros_client.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/xarm_ros_client.dir/build.make xarm_api/CMakeFiles/xarm_ros_client.dir/clean
-.PHONY : xarm_api/CMakeFiles/xarm_ros_client.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/xarm_ros_client.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
-.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_py
-
-# clean rule for target.
-xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# clean rule for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# clean rule for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# clean rule for target.
-xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 .PHONY : clean
 
@@ -2886,6 +3091,70 @@ clean: xarm_api/CMakeFiles/xarm_driver_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# clean rule for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# clean rule for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir
 
 # All Build rule for target.
@@ -2914,258 +3183,6 @@ xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/xarm_api.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-xarm_api/CMakeFiles/xarm_api.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-	$(MAKE) -f xarm_api/CMakeFiles/xarm_api.dir/build.make xarm_api/CMakeFiles/xarm_api.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/xarm_api.dir/build.make xarm_api/CMakeFiles/xarm_api.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=12,13,14,15,16,17 "Built target xarm_api"
-.PHONY : xarm_api/CMakeFiles/xarm_api.dir/all
-
-# Include target in all.
-all: xarm_api/CMakeFiles/xarm_api.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/xarm_api.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 53
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_api.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/xarm_api.dir/rule
-
-# Convenience name for target.
-xarm_api: xarm_api/CMakeFiles/xarm_api.dir/rule
-
-.PHONY : xarm_api
-
-# clean rule for target.
-xarm_api/CMakeFiles/xarm_api.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/xarm_api.dir/build.make xarm_api/CMakeFiles/xarm_api.dir/clean
-.PHONY : xarm_api/CMakeFiles/xarm_api.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/xarm_api.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/example1_report_norm_node.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/example1_report_norm_node.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
-	$(MAKE) -f xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make xarm_api/CMakeFiles/example1_report_norm_node.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make xarm_api/CMakeFiles/example1_report_norm_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target example1_report_norm_node"
-.PHONY : xarm_api/CMakeFiles/example1_report_norm_node.dir/all
-
-# Include target in all.
-all: xarm_api/CMakeFiles/example1_report_norm_node.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/example1_report_norm_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 53
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/example1_report_norm_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
-
-# Convenience name for target.
-example1_report_norm_node: xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
-
-.PHONY : example1_report_norm_node
-
-# clean rule for target.
-xarm_api/CMakeFiles/example1_report_norm_node.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make xarm_api/CMakeFiles/example1_report_norm_node.dir/clean
-.PHONY : xarm_api/CMakeFiles/example1_report_norm_node.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/example1_report_norm_node.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/move_test.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/move_test.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
-	$(MAKE) -f xarm_api/CMakeFiles/move_test.dir/build.make xarm_api/CMakeFiles/move_test.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/move_test.dir/build.make xarm_api/CMakeFiles/move_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=8 "Built target move_test"
-.PHONY : xarm_api/CMakeFiles/move_test.dir/all
-
-# Include target in all.
-all: xarm_api/CMakeFiles/move_test.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/move_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 54
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/move_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/move_test.dir/rule
-
-# Convenience name for target.
-move_test: xarm_api/CMakeFiles/move_test.dir/rule
-
-.PHONY : move_test
-
-# clean rule for target.
-xarm_api/CMakeFiles/move_test.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/move_test.dir/build.make xarm_api/CMakeFiles/move_test.dir/clean
-.PHONY : xarm_api/CMakeFiles/move_test.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/move_test.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/test_tool_modbus.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/test_tool_modbus.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
-xarm_api/CMakeFiles/test_tool_modbus.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
-	$(MAKE) -f xarm_api/CMakeFiles/test_tool_modbus.dir/build.make xarm_api/CMakeFiles/test_tool_modbus.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/test_tool_modbus.dir/build.make xarm_api/CMakeFiles/test_tool_modbus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=11 "Built target test_tool_modbus"
-.PHONY : xarm_api/CMakeFiles/test_tool_modbus.dir/all
-
-# Include target in all.
-all: xarm_api/CMakeFiles/test_tool_modbus.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/test_tool_modbus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 55
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/test_tool_modbus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/test_tool_modbus.dir/rule
-
-# Convenience name for target.
-test_tool_modbus: xarm_api/CMakeFiles/test_tool_modbus.dir/rule
-
-.PHONY : test_tool_modbus
-
-# clean rule for target.
-xarm_api/CMakeFiles/test_tool_modbus.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/test_tool_modbus.dir/build.make xarm_api/CMakeFiles/test_tool_modbus.dir/clean
-.PHONY : xarm_api/CMakeFiles/test_tool_modbus.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/test_tool_modbus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# clean rule for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target xarm_api/CMakeFiles/servo_cart_test.dir
-
-# All Build rule for target.
-xarm_api/CMakeFiles/servo_cart_test.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
-	$(MAKE) -f xarm_api/CMakeFiles/servo_cart_test.dir/build.make xarm_api/CMakeFiles/servo_cart_test.dir/depend
-	$(MAKE) -f xarm_api/CMakeFiles/servo_cart_test.dir/build.make xarm_api/CMakeFiles/servo_cart_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=10 "Built target servo_cart_test"
-.PHONY : xarm_api/CMakeFiles/servo_cart_test.dir/all
-
-# Include target in all.
-all: xarm_api/CMakeFiles/servo_cart_test.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-xarm_api/CMakeFiles/servo_cart_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 54
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/servo_cart_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
-.PHONY : xarm_api/CMakeFiles/servo_cart_test.dir/rule
-
-# Convenience name for target.
-servo_cart_test: xarm_api/CMakeFiles/servo_cart_test.dir/rule
-
-.PHONY : servo_cart_test
-
-# clean rule for target.
-xarm_api/CMakeFiles/servo_cart_test.dir/clean:
-	$(MAKE) -f xarm_api/CMakeFiles/servo_cart_test.dir/build.make xarm_api/CMakeFiles/servo_cart_test.dir/clean
-.PHONY : xarm_api/CMakeFiles/servo_cart_test.dir/clean
-
-# clean rule for target.
-clean: xarm_api/CMakeFiles/servo_cart_test.dir/clean
 
 .PHONY : clean
 
@@ -3231,8 +3248,8 @@ xarm_controller/preinstall:
 # Target rules for target xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir
 
 # All Build rule for target.
-xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
 xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
+xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
 xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/all: xarm_controller/CMakeFiles/xarm_combined_hw.dir/all
 xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/all: xarm_controller/CMakeFiles/xarm_hw.dir/all
 	$(MAKE) -f xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build.make xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/depend
@@ -3537,28 +3554,28 @@ xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_msgs/CMakeFiles/std_ms
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/all
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/all
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
-xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_controller/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_controller/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
@@ -4172,8 +4189,8 @@ clean: xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/
 # Target rules for target xarm_controller/CMakeFiles/sample_motion.dir
 
 # All Build rule for target.
-xarm_controller/CMakeFiles/sample_motion.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
 xarm_controller/CMakeFiles/sample_motion.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
+xarm_controller/CMakeFiles/sample_motion.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
 	$(MAKE) -f xarm_controller/CMakeFiles/sample_motion.dir/build.make xarm_controller/CMakeFiles/sample_motion.dir/depend
 	$(MAKE) -f xarm_controller/CMakeFiles/sample_motion.dir/build.make xarm_controller/CMakeFiles/sample_motion.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=9 "Built target sample_motion"
@@ -4444,28 +4461,28 @@ xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_msgs/CMakeFiles/std_msgs_genera
 xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/all
 xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/all
 xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
-xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_controller/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
 xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
 xarm_controller/CMakeFiles/xarm_hw.dir/all: xarm_controller/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
@@ -4534,8 +4551,8 @@ clean: xarm_controller/CMakeFiles/xarm_hw.dir/clean
 # Target rules for target xarm_controller/CMakeFiles/xarm_traj_controller.dir
 
 # All Build rule for target.
-xarm_controller/CMakeFiles/xarm_traj_controller.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
 xarm_controller/CMakeFiles/xarm_traj_controller.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
+xarm_controller/CMakeFiles/xarm_traj_controller.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
 xarm_controller/CMakeFiles/xarm_traj_controller.dir/all: xarm_controller/CMakeFiles/xarm_hw.dir/all
 	$(MAKE) -f xarm_controller/CMakeFiles/xarm_traj_controller.dir/build.make xarm_controller/CMakeFiles/xarm_traj_controller.dir/depend
 	$(MAKE) -f xarm_controller/CMakeFiles/xarm_traj_controller.dir/build.make xarm_controller/CMakeFiles/xarm_traj_controller.dir/build
@@ -4645,18 +4662,18 @@ xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_msgs/CMakeFiles/std_
 xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/all
 xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/all
 xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/all
-xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/all
-xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/all
-xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
-xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/all
+xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/all
+xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
+xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
 xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_controller/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_controller/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 xarm_gripper/CMakeFiles/gripper_action_server.dir/all: xarm_controller/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
@@ -4987,18 +5004,18 @@ xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_msgs/CMakeFiles/std_msgs_ge
 xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/all
 xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/all
 xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/all
-xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/all
-xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/all
-xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
-xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/all
+xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/all
+xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/xarm_api.dir/all
+xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_api/CMakeFiles/xarm_ros_client.dir/all
 xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_controller/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_controller/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 xarm_gripper/CMakeFiles/gripper_client.dir/all: xarm_controller/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all

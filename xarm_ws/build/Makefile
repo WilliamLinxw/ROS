@@ -766,43 +766,82 @@ xarm_msgs_genpy/fast:
 .PHONY : xarm_msgs_genpy/fast
 
 #=============================================================================
-# Target rules for targets named std_srvs_generate_messages_cpp
+# Target rules for targets named roscpp_generate_messages_nodejs
 
 # Build rule for target.
-std_srvs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
-.PHONY : std_srvs_generate_messages_cpp
+roscpp_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
+.PHONY : roscpp_generate_messages_nodejs
 
 # fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
+roscpp_generate_messages_nodejs/fast:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named std_srvs_generate_messages_py
+# Target rules for targets named roscpp_generate_messages_eus
 
 # Build rule for target.
-std_srvs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
-.PHONY : std_srvs_generate_messages_py
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
 
 # fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
+roscpp_generate_messages_eus/fast:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_py
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
 
 # Build rule for target.
-rosgraph_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
-.PHONY : rosgraph_msgs_generate_messages_py
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
@@ -814,8 +853,112 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named servo_cart_test
+
+# Build rule for target.
+servo_cart_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 servo_cart_test
+.PHONY : servo_cart_test
+
+# fast build rule for target.
+servo_cart_test/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/servo_cart_test.dir/build.make xarm_api/CMakeFiles/servo_cart_test.dir/build
+.PHONY : servo_cart_test/fast
+
+#=============================================================================
+# Target rules for targets named test_tool_modbus
+
+# Build rule for target.
+test_tool_modbus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_tool_modbus
+.PHONY : test_tool_modbus
+
+# fast build rule for target.
+test_tool_modbus/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/test_tool_modbus.dir/build.make xarm_api/CMakeFiles/test_tool_modbus.dir/build
+.PHONY : test_tool_modbus/fast
+
+#=============================================================================
+# Target rules for targets named move_test
+
+# Build rule for target.
+move_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_test
+.PHONY : move_test
+
+# fast build rule for target.
+move_test/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/move_test.dir/build.make xarm_api/CMakeFiles/move_test.dir/build
+.PHONY : move_test/fast
+
+#=============================================================================
+# Target rules for targets named example1_report_norm_node
+
+# Build rule for target.
+example1_report_norm_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 example1_report_norm_node
+.PHONY : example1_report_norm_node
+
+# fast build rule for target.
+example1_report_norm_node/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make xarm_api/CMakeFiles/example1_report_norm_node.dir/build
+.PHONY : example1_report_norm_node/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named std_srvs_generate_messages_nodejs
@@ -831,17 +974,43 @@ std_srvs_generate_messages_nodejs/fast:
 .PHONY : std_srvs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+# Target rules for targets named sensor_msgs_generate_messages_nodejs
 
 # Build rule for target.
-rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
-.PHONY : rosgraph_msgs_generate_messages_lisp
+sensor_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+sensor_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named xarm_api
+
+# Build rule for target.
+xarm_api: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_api
+.PHONY : xarm_api
+
+# fast build rule for target.
+xarm_api/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/xarm_api.dir/build.make xarm_api/CMakeFiles/xarm_api.dir/build
+.PHONY : xarm_api/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_py
+
+# Build rule for target.
+std_srvs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named std_srvs_generate_messages_lisp
@@ -857,17 +1026,69 @@ std_srvs_generate_messages_lisp/fast:
 .PHONY : std_srvs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+# Target rules for targets named xarm_ros_client
 
 # Build rule for target.
-rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
-.PHONY : rosgraph_msgs_generate_messages_cpp
+xarm_ros_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_ros_client
+.PHONY : xarm_ros_client
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+xarm_ros_client/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/xarm_ros_client.dir/build.make xarm_api/CMakeFiles/xarm_ros_client.dir/build
+.PHONY : xarm_ros_client/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_eus
+
+# Build rule for target.
+std_srvs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_cpp
+
+# Build rule for target.
+std_srvs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_nodejs
+
+# Build rule for target.
+geometry_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_cpp
@@ -896,84 +1117,6 @@ sensor_msgs_generate_messages_eus/fast:
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_lisp
-
-# Build rule for target.
-roscpp_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
-
-# Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_nodejs
-
-# Build rule for target.
-roscpp_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_eus
-
-# Build rule for target.
-roscpp_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_eus
-
-# Build rule for target.
-geometry_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_eus
-.PHONY : geometry_msgs_generate_messages_eus
-
-# fast build rule for target.
-geometry_msgs_generate_messages_eus/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-.PHONY : geometry_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_eus
-
-# Build rule for target.
-std_srvs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -985,97 +1128,6 @@ sensor_msgs_generate_messages_lisp: cmake_check_build_system
 sensor_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_cpp
-
-# Build rule for target.
-roscpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_nodejs
-
-# Build rule for target.
-sensor_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named xarm_ros_client
-
-# Build rule for target.
-xarm_ros_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_ros_client
-.PHONY : xarm_ros_client
-
-# fast build rule for target.
-xarm_ros_client/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/xarm_ros_client.dir/build.make xarm_api/CMakeFiles/xarm_ros_client.dir/build
-.PHONY : xarm_ros_client/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_py
-
-# Build rule for target.
-sensor_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_lisp
-
-# Build rule for target.
-geometry_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_cpp
-
-# Build rule for target.
-geometry_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_eus
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named xarm_driver_node
@@ -1091,6 +1143,32 @@ xarm_driver_node/fast:
 .PHONY : xarm_driver_node/fast
 
 #=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
+
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_eus
+
+# Build rule for target.
+geometry_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_eus
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
 
 # Build rule for target.
@@ -1102,84 +1180,6 @@ geometry_msgs_generate_messages_py: cmake_check_build_system
 geometry_msgs_generate_messages_py/fast:
 	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named xarm_api
-
-# Build rule for target.
-xarm_api: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 xarm_api
-.PHONY : xarm_api
-
-# fast build rule for target.
-xarm_api/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/xarm_api.dir/build.make xarm_api/CMakeFiles/xarm_api.dir/build
-.PHONY : xarm_api/fast
-
-#=============================================================================
-# Target rules for targets named example1_report_norm_node
-
-# Build rule for target.
-example1_report_norm_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 example1_report_norm_node
-.PHONY : example1_report_norm_node
-
-# fast build rule for target.
-example1_report_norm_node/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make xarm_api/CMakeFiles/example1_report_norm_node.dir/build
-.PHONY : example1_report_norm_node/fast
-
-#=============================================================================
-# Target rules for targets named move_test
-
-# Build rule for target.
-move_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 move_test
-.PHONY : move_test
-
-# fast build rule for target.
-move_test/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/move_test.dir/build.make xarm_api/CMakeFiles/move_test.dir/build
-.PHONY : move_test/fast
-
-#=============================================================================
-# Target rules for targets named test_tool_modbus
-
-# Build rule for target.
-test_tool_modbus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_tool_modbus
-.PHONY : test_tool_modbus
-
-# fast build rule for target.
-test_tool_modbus/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/test_tool_modbus.dir/build.make xarm_api/CMakeFiles/test_tool_modbus.dir/build
-.PHONY : test_tool_modbus/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_nodejs
-
-# Build rule for target.
-geometry_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named servo_cart_test
-
-# Build rule for target.
-servo_cart_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 servo_cart_test
-.PHONY : servo_cart_test
-
-# fast build rule for target.
-servo_cart_test/fast:
-	$(MAKE) -f xarm_api/CMakeFiles/servo_cart_test.dir/build.make xarm_api/CMakeFiles/servo_cart_test.dir/build
-.PHONY : servo_cart_test/fast
 
 #=============================================================================
 # Target rules for targets named xarm_combined_traj_controller
@@ -2826,38 +2826,38 @@ help:
 	@echo "... xarm_msgs_generate_messages_py"
 	@echo "... xarm_msgs_genlisp"
 	@echo "... xarm_msgs_genpy"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
-	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... xarm_ros_client"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... xarm_driver_node"
-	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... xarm_api"
-	@echo "... example1_report_norm_node"
-	@echo "... move_test"
-	@echo "... test_tool_modbus"
-	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... servo_cart_test"
+	@echo "... test_tool_modbus"
+	@echo "... move_test"
+	@echo "... example1_report_norm_node"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... xarm_api"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... xarm_ros_client"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... xarm_driver_node"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... xarm_combined_traj_controller"
 	@echo "... trajectory_msgs_generate_messages_cpp"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
