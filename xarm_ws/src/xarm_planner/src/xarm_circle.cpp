@@ -24,7 +24,7 @@ int main(int argc, char **argv)
     xarm7.setMaxAccelerationScalingFactor(0.8);
     xarm7.setMaxVelocityScalingFactor(0.8);
 
-    // 控制机械臂先回到初始化位置
+    // Back to home position
     xarm7.setNamedTarget("home_pose");
     xarm7.move();
     sleep(1);
@@ -45,7 +45,7 @@ int main(int argc, char **argv)
     vector<geometry_msgs::Pose> waypoints;
     waypoints.push_back(target_pose);
 
-    //在xy平面内生成一个圆周
+    // Create a circle on a surface with the same z coordinate
     double centerA = target_pose.position.x;
     double centerB = target_pose.position.y;
     double radius = 0.06;
@@ -57,13 +57,13 @@ int main(int argc, char **argv)
         waypoints.push_back(target_pose);
     }
 
-    // 笛卡尔空间下的路径规划
+    // Compute Cartesian Path
     moveit_msgs::RobotTrajectory trajectory;
     const double jump_threshold = 0.0;
     const double eef_step = 0.01;
     double fraction = 0.0;
-    int maxtries = 100;   //最大尝试规划次数
-    int attempts = 0;     //已经尝试规划次数
+    int maxtries = 100;   // Max trials
+    int attempts = 0;     // Trials taken
 
     while(fraction < 1.0 && attempts < maxtries)
     {
@@ -78,11 +78,11 @@ int main(int argc, char **argv)
     {
         ROS_INFO("Path computed successfully. Moving the arm.");
 
-        // 生成机械臂的运动规划数据
+        // Generate the data of motion planning
         moveit::planning_interface::MoveGroupInterface::Plan plan;
         plan.trajectory_ = trajectory;
 
-        // 执行运动
+        // Execute the plan
         xarm7.execute(plan);
         sleep(1);
     }
@@ -91,7 +91,7 @@ int main(int argc, char **argv)
         ROS_INFO("Path planning failed with only %0.6f success after %d attempts.", fraction, maxtries);
     }
 
-    // // 控制机械臂先回到初始化位置
+    // // Back to the home position
     // xarm7.setNamedTarget("home_pose");
     // xarm7.move();
     // sleep(1);
