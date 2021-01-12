@@ -7,14 +7,14 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "move_with_circle");
+    ros::init(argc, argv, "draw_a_circle");
     ros::AsyncSpinner spinner(1);
     spinner.start();
 
     moveit::planning_interface::MoveGroupInterface xarm7("xarm7");
 
     string eef_link = xarm7.getEndEffector();
-    std::string reference_frame = "base_link";
+    std::string reference_frame = "world";
     xarm7.setPoseReferenceFrame(reference_frame);
 
     xarm7.allowReplanning(true);
@@ -25,19 +25,19 @@ int main(int argc, char **argv)
     xarm7.setMaxVelocityScalingFactor(0.8);
 
     // 控制机械臂先回到初始化位置
-    xarm7.setNamedTarget("home");
+    xarm7.setNamedTarget("home_pose");
     xarm7.move();
     sleep(1);
 
     geometry_msgs::Pose target_pose;
-    target_pose.orientation.x = 0.70711;
+    target_pose.orientation.x = 1;
     target_pose.orientation.y = 0;
     target_pose.orientation.z = 0;
-    target_pose.orientation.w = 0.70711;
+    target_pose.orientation.w = 0;
 
-    target_pose.position.x = 0.070859;
-    target_pose.position.y = 0.36739;
-    target_pose.position.z = 0.84716;
+    target_pose.position.x = 0.50;
+    target_pose.position.y = 0;
+    target_pose.position.z = -0.012;
 
     xarm7.setPoseTarget(target_pose);
     xarm7.move();
@@ -48,9 +48,9 @@ int main(int argc, char **argv)
     //在xy平面内生成一个圆周
     double centerA = target_pose.position.x;
     double centerB = target_pose.position.y;
-    double radius = 0.15;
+    double radius = 0.06;
 
-    for(double theta = 0.0; theta < M_PI*2; theta += 0.01)
+    for(double theta = 0.0; theta <= M_PI*4; theta += 0.01)
     {
         target_pose.position.x = centerA + radius * cos(theta);
         target_pose.position.y = centerB + radius * sin(theta);
@@ -91,10 +91,10 @@ int main(int argc, char **argv)
         ROS_INFO("Path planning failed with only %0.6f success after %d attempts.", fraction, maxtries);
     }
 
-    // 控制机械臂先回到初始化位置
-    xarm7.setNamedTarget("home");
-    xarm7.move();
-    sleep(1);
+    // // 控制机械臂先回到初始化位置
+    // xarm7.setNamedTarget("home_pose");
+    // xarm7.move();
+    // sleep(1);
 
     ros::shutdown();
     return 0;

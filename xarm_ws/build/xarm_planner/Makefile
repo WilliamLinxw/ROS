@@ -1023,6 +1023,21 @@ tf_generate_messages_cpp/fast:
 .PHONY : tf_generate_messages_cpp/fast
 
 # Convenience name for target.
+xarm_planner/CMakeFiles/xarm_circle.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_planner/CMakeFiles/xarm_circle.dir/rule
+.PHONY : xarm_planner/CMakeFiles/xarm_circle.dir/rule
+
+# Convenience name for target.
+xarm_circle: xarm_planner/CMakeFiles/xarm_circle.dir/rule
+
+.PHONY : xarm_circle
+
+# fast build rule for target.
+xarm_circle/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_planner/CMakeFiles/xarm_circle.dir/build.make xarm_planner/CMakeFiles/xarm_circle.dir/build
+.PHONY : xarm_circle/fast
+
+# Convenience name for target.
 xarm_planner/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule:
 	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_planner/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
 .PHONY : xarm_planner/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
@@ -1066,6 +1081,33 @@ graph_msgs_generate_messages_py: xarm_planner/CMakeFiles/graph_msgs_generate_mes
 graph_msgs_generate_messages_py/fast:
 	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_planner/CMakeFiles/graph_msgs_generate_messages_py.dir/build.make xarm_planner/CMakeFiles/graph_msgs_generate_messages_py.dir/build
 .PHONY : graph_msgs_generate_messages_py/fast
+
+src/xarm_circle.o: src/xarm_circle.cpp.o
+
+.PHONY : src/xarm_circle.o
+
+# target to build an object file
+src/xarm_circle.cpp.o:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_planner/CMakeFiles/xarm_circle.dir/build.make xarm_planner/CMakeFiles/xarm_circle.dir/src/xarm_circle.cpp.o
+.PHONY : src/xarm_circle.cpp.o
+
+src/xarm_circle.i: src/xarm_circle.cpp.i
+
+.PHONY : src/xarm_circle.i
+
+# target to preprocess a source file
+src/xarm_circle.cpp.i:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_planner/CMakeFiles/xarm_circle.dir/build.make xarm_planner/CMakeFiles/xarm_circle.dir/src/xarm_circle.cpp.i
+.PHONY : src/xarm_circle.cpp.i
+
+src/xarm_circle.s: src/xarm_circle.cpp.s
+
+.PHONY : src/xarm_circle.s
+
+# target to generate assembly for a file
+src/xarm_circle.cpp.s:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_planner/CMakeFiles/xarm_circle.dir/build.make xarm_planner/CMakeFiles/xarm_circle.dir/src/xarm_circle.cpp.s
+.PHONY : src/xarm_circle.cpp.s
 
 src/xarm_gripper_planner.o: src/xarm_gripper_planner.cpp.o
 
@@ -1218,9 +1260,13 @@ help:
 	@echo "... install"
 	@echo "... graph_msgs_generate_messages_lisp"
 	@echo "... tf_generate_messages_cpp"
+	@echo "... xarm_circle"
 	@echo "... octomap_msgs_generate_messages_cpp"
 	@echo "... graph_msgs_generate_messages_nodejs"
 	@echo "... graph_msgs_generate_messages_py"
+	@echo "... src/xarm_circle.o"
+	@echo "... src/xarm_circle.i"
+	@echo "... src/xarm_circle.s"
 	@echo "... src/xarm_gripper_planner.o"
 	@echo "... src/xarm_gripper_planner.i"
 	@echo "... src/xarm_gripper_planner.s"

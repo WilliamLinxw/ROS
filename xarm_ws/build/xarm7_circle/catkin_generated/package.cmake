@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "xarm7_circle")
 set(xarm7_circle_VERSION "0.0.0")
-set(xarm7_circle_MAINTAINER "caesar <caesar@todo.todo>")
+set(xarm7_circle_MAINTAINER "caesar <xiaowei.lin1997@gmail.com>")
 set(xarm7_circle_PACKAGE_FORMAT "2")
 set(xarm7_circle_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
 set(xarm7_circle_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "std_msgs")

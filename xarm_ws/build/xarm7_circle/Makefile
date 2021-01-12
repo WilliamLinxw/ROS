@@ -68,6 +68,18 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -99,18 +111,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -196,6 +196,21 @@ roscpp_generate_messages_eus: xarm7_circle/CMakeFiles/roscpp_generate_messages_e
 roscpp_generate_messages_eus/fast:
 	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/build.make xarm7_circle/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
+xarm7_circle/CMakeFiles/circle.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm7_circle/CMakeFiles/circle.dir/rule
+.PHONY : xarm7_circle/CMakeFiles/circle.dir/rule
+
+# Convenience name for target.
+circle: xarm7_circle/CMakeFiles/circle.dir/rule
+
+.PHONY : circle
+
+# fast build rule for target.
+circle/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm7_circle/CMakeFiles/circle.dir/build.make xarm7_circle/CMakeFiles/circle.dir/build
+.PHONY : circle/fast
 
 # Convenience name for target.
 xarm7_circle/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
@@ -324,8 +339,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
+	@echo "... circle"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
@@ -336,7 +353,6 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... install"

@@ -220,3 +220,7 @@ target_link_libraries(xarm_simple_planner_test ${catkin_LIBRARIES})
 add_executable(xarm_gripper_planner src/xarm_gripper_planner.cpp)
 add_dependencies(xarm_gripper_planner ${${PROJECT_NAME}_EXPORTED_TARGETS})
 target_link_libraries(xarm_gripper_planner ${catkin_LIBRARIES})
+
+add_executable(xarm_circle src/xarm_circle.cpp)
+add_dependencies(xarm_circle ${${PROJECT_NAME}_EXPORTED_TARGETS})
+target_link_libraries(xarm_circle ${catkin_LIBRARIES})

@@ -68,29 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -103,6 +80,17 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -114,6 +102,28 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -124,16 +134,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,124 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-xarm_api/CMakeFiles/servo_cart_test.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/servo_cart_test.dir/rule
-.PHONY : xarm_api/CMakeFiles/servo_cart_test.dir/rule
+xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-servo_cart_test: xarm_api/CMakeFiles/servo_cart_test.dir/rule
+std_srvs_generate_messages_cpp: xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 
-.PHONY : servo_cart_test
+.PHONY : std_srvs_generate_messages_cpp
 
 # fast build rule for target.
-servo_cart_test/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/servo_cart_test.dir/build.make xarm_api/CMakeFiles/servo_cart_test.dir/build
-.PHONY : servo_cart_test/fast
-
-# Convenience name for target.
-xarm_api/CMakeFiles/test_tool_modbus.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/test_tool_modbus.dir/rule
-.PHONY : xarm_api/CMakeFiles/test_tool_modbus.dir/rule
-
-# Convenience name for target.
-test_tool_modbus: xarm_api/CMakeFiles/test_tool_modbus.dir/rule
-
-.PHONY : test_tool_modbus
-
-# fast build rule for target.
-test_tool_modbus/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/test_tool_modbus.dir/build.make xarm_api/CMakeFiles/test_tool_modbus.dir/build
-.PHONY : test_tool_modbus/fast
-
-# Convenience name for target.
-xarm_api/CMakeFiles/move_test.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/move_test.dir/rule
-.PHONY : xarm_api/CMakeFiles/move_test.dir/rule
-
-# Convenience name for target.
-move_test: xarm_api/CMakeFiles/move_test.dir/rule
-
-.PHONY : move_test
-
-# fast build rule for target.
-move_test/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/move_test.dir/build.make xarm_api/CMakeFiles/move_test.dir/build
-.PHONY : move_test/fast
-
-# Convenience name for target.
-xarm_api/CMakeFiles/example1_report_norm_node.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
-.PHONY : xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
-
-# Convenience name for target.
-example1_report_norm_node: xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
-
-.PHONY : example1_report_norm_node
-
-# fast build rule for target.
-example1_report_norm_node/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make xarm_api/CMakeFiles/example1_report_norm_node.dir/build
-.PHONY : example1_report_norm_node/fast
-
-# Convenience name for target.
-xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_nodejs: xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_nodejs: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-xarm_api/CMakeFiles/xarm_api.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_api.dir/rule
-.PHONY : xarm_api/CMakeFiles/xarm_api.dir/rule
-
-# Convenience name for target.
-xarm_api: xarm_api/CMakeFiles/xarm_api.dir/rule
-
-.PHONY : xarm_api
-
-# fast build rule for target.
-xarm_api/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/xarm_api.dir/build.make xarm_api/CMakeFiles/xarm_api.dir/build
-.PHONY : xarm_api/fast
+std_srvs_generate_messages_cpp/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
 
 # Convenience name for target.
 xarm_api/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
@@ -303,6 +198,66 @@ std_srvs_generate_messages_py/fast:
 .PHONY : std_srvs_generate_messages_py/fast
 
 # Convenience name for target.
+xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_nodejs: xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
 xarm_api/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
 	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
 .PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
@@ -318,79 +273,19 @@ std_srvs_generate_messages_lisp/fast:
 .PHONY : std_srvs_generate_messages_lisp/fast
 
 # Convenience name for target.
-xarm_api/CMakeFiles/xarm_ros_client.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_ros_client.dir/rule
-.PHONY : xarm_api/CMakeFiles/xarm_ros_client.dir/rule
+xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-xarm_ros_client: xarm_api/CMakeFiles/xarm_ros_client.dir/rule
+rosgraph_msgs_generate_messages_cpp: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : xarm_ros_client
+.PHONY : rosgraph_msgs_generate_messages_cpp
 
 # fast build rule for target.
-xarm_ros_client/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/xarm_ros_client.dir/build.make xarm_api/CMakeFiles/xarm_ros_client.dir/build
-.PHONY : xarm_ros_client/fast
-
-# Convenience name for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_eus: xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-# Convenience name for target.
-xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_cpp: xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-# Convenience name for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 xarm_api/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
@@ -423,49 +318,64 @@ sensor_msgs_generate_messages_eus/fast:
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_lisp: xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+roscpp_generate_messages_lisp: xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
-.PHONY : sensor_msgs_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
 
 # fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
+roscpp_generate_messages_lisp/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
-xarm_api/CMakeFiles/xarm_driver_node.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_driver_node.dir/rule
-.PHONY : xarm_api/CMakeFiles/xarm_driver_node.dir/rule
+xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
-xarm_driver_node: xarm_api/CMakeFiles/xarm_driver_node.dir/rule
+roscpp_generate_messages_py: xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
-.PHONY : xarm_driver_node
+.PHONY : roscpp_generate_messages_py
 
 # fast build rule for target.
-xarm_driver_node/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/xarm_driver_node.dir/build.make xarm_api/CMakeFiles/xarm_driver_node.dir/build
-.PHONY : xarm_driver_node/fast
+roscpp_generate_messages_py/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
-xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_cpp: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+roscpp_generate_messages_nodejs: xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_cpp
+.PHONY : roscpp_generate_messages_nodejs
 
 # fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
+roscpp_generate_messages_nodejs/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 xarm_api/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
@@ -483,6 +393,156 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+.PHONY : xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_eus: xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/xarm_ros_client.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_ros_client.dir/rule
+.PHONY : xarm_api/CMakeFiles/xarm_ros_client.dir/rule
+
+# Convenience name for target.
+xarm_ros_client: xarm_api/CMakeFiles/xarm_ros_client.dir/rule
+
+.PHONY : xarm_ros_client
+
+# fast build rule for target.
+xarm_ros_client/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/xarm_ros_client.dir/build.make xarm_api/CMakeFiles/xarm_ros_client.dir/build
+.PHONY : xarm_ros_client/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make xarm_api/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/xarm_driver_node.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_driver_node.dir/rule
+.PHONY : xarm_api/CMakeFiles/xarm_driver_node.dir/rule
+
+# Convenience name for target.
+xarm_driver_node: xarm_api/CMakeFiles/xarm_driver_node.dir/rule
+
+.PHONY : xarm_driver_node
+
+# fast build rule for target.
+xarm_driver_node/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/xarm_driver_node.dir/build.make xarm_api/CMakeFiles/xarm_driver_node.dir/build
+.PHONY : xarm_driver_node/fast
+
+# Convenience name for target.
 xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
 	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
@@ -496,6 +556,96 @@ geometry_msgs_generate_messages_py: xarm_api/CMakeFiles/geometry_msgs_generate_m
 geometry_msgs_generate_messages_py/fast:
 	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/xarm_api.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_api.dir/rule
+.PHONY : xarm_api/CMakeFiles/xarm_api.dir/rule
+
+# Convenience name for target.
+xarm_api: xarm_api/CMakeFiles/xarm_api.dir/rule
+
+.PHONY : xarm_api
+
+# fast build rule for target.
+xarm_api/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/xarm_api.dir/build.make xarm_api/CMakeFiles/xarm_api.dir/build
+.PHONY : xarm_api/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/example1_report_norm_node.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
+.PHONY : xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
+
+# Convenience name for target.
+example1_report_norm_node: xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
+
+.PHONY : example1_report_norm_node
+
+# fast build rule for target.
+example1_report_norm_node/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make xarm_api/CMakeFiles/example1_report_norm_node.dir/build
+.PHONY : example1_report_norm_node/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/move_test.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/move_test.dir/rule
+.PHONY : xarm_api/CMakeFiles/move_test.dir/rule
+
+# Convenience name for target.
+move_test: xarm_api/CMakeFiles/move_test.dir/rule
+
+.PHONY : move_test
+
+# fast build rule for target.
+move_test/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/move_test.dir/build.make xarm_api/CMakeFiles/move_test.dir/build
+.PHONY : move_test/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/test_tool_modbus.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/test_tool_modbus.dir/rule
+.PHONY : xarm_api/CMakeFiles/test_tool_modbus.dir/rule
+
+# Convenience name for target.
+test_tool_modbus: xarm_api/CMakeFiles/test_tool_modbus.dir/rule
+
+.PHONY : test_tool_modbus
+
+# fast build rule for target.
+test_tool_modbus/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/test_tool_modbus.dir/build.make xarm_api/CMakeFiles/test_tool_modbus.dir/build
+.PHONY : test_tool_modbus/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make xarm_api/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+xarm_api/CMakeFiles/servo_cart_test.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/servo_cart_test.dir/rule
+.PHONY : xarm_api/CMakeFiles/servo_cart_test.dir/rule
+
+# Convenience name for target.
+servo_cart_test: xarm_api/CMakeFiles/servo_cart_test.dir/rule
+
+.PHONY : servo_cart_test
+
+# fast build rule for target.
+servo_cart_test/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_api/CMakeFiles/servo_cart_test.dir/build.make xarm_api/CMakeFiles/servo_cart_test.dir/build
+.PHONY : servo_cart_test/fast
 
 src/xarm/common/crc16.o: src/xarm/common/crc16.cc.o
 
@@ -1017,34 +1167,44 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... servo_cart_test"
-	@echo "... test_tool_modbus"
-	@echo "... move_test"
-	@echo "... example1_report_norm_node"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... xarm_api"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... test"
-	@echo "... xarm_ros_client"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_eus"
 	@echo "... install"
 	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... edit_cache"
-	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... test"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... rebuild_cache"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... xarm_driver_node"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... list_install_components"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... edit_cache"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... list_install_components"
+	@echo "... install/local"
+	@echo "... std_srvs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... rebuild_cache"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... xarm_ros_client"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... xarm_driver_node"
 	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... xarm_api"
+	@echo "... example1_report_norm_node"
+	@echo "... move_test"
+	@echo "... test_tool_modbus"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... servo_cart_test"
 	@echo "... src/xarm/common/crc16.o"
 	@echo "... src/xarm/common/crc16.i"
 	@echo "... src/xarm/common/crc16.s"
