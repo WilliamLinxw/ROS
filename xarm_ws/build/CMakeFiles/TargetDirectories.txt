@@ -307,6 +307,7 @@
 /home/caesar/Desktop/ROS/xarm_ws/build/xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir
 /home/caesar/Desktop/ROS/xarm_ws/build/xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir
 /home/caesar/Desktop/ROS/xarm_ws/build/xarm_planner/CMakeFiles/install/local.dir
+/home/caesar/Desktop/ROS/xarm_ws/build/xarm_planner/CMakeFiles/xarm_mul_traj.dir
 /home/caesar/Desktop/ROS/xarm_ws/build/xarm_planner/CMakeFiles/xarm_planner_genpy.dir
 /home/caesar/Desktop/ROS/xarm_ws/build/xarm_planner/CMakeFiles/edit_cache.dir
 /home/caesar/Desktop/ROS/xarm_ws/build/xarm_planner/CMakeFiles/xarm_planner_geneus.dir

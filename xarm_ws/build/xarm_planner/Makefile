@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+xarm_planner/CMakeFiles/xarm_mul_traj.dir/rule:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_planner/CMakeFiles/xarm_mul_traj.dir/rule
+.PHONY : xarm_planner/CMakeFiles/xarm_mul_traj.dir/rule
+
+# Convenience name for target.
+xarm_mul_traj: xarm_planner/CMakeFiles/xarm_mul_traj.dir/rule
+
+.PHONY : xarm_mul_traj
+
+# fast build rule for target.
+xarm_mul_traj/fast:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_planner/CMakeFiles/xarm_mul_traj.dir/build.make xarm_planner/CMakeFiles/xarm_mul_traj.dir/build
+.PHONY : xarm_mul_traj/fast
+
+# Convenience name for target.
 xarm_planner/CMakeFiles/xarm_planner_genpy.dir/rule:
 	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_planner/CMakeFiles/xarm_planner_genpy.dir/rule
 .PHONY : xarm_planner/CMakeFiles/xarm_planner_genpy.dir/rule
@@ -1136,6 +1151,33 @@ src/xarm_gripper_planner.cpp.s:
 	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_planner/CMakeFiles/xarm_gripper_planner.dir/build.make xarm_planner/CMakeFiles/xarm_gripper_planner.dir/src/xarm_gripper_planner.cpp.s
 .PHONY : src/xarm_gripper_planner.cpp.s
 
+src/xarm_multiple_trajectories.o: src/xarm_multiple_trajectories.cpp.o
+
+.PHONY : src/xarm_multiple_trajectories.o
+
+# target to build an object file
+src/xarm_multiple_trajectories.cpp.o:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_planner/CMakeFiles/xarm_mul_traj.dir/build.make xarm_planner/CMakeFiles/xarm_mul_traj.dir/src/xarm_multiple_trajectories.cpp.o
+.PHONY : src/xarm_multiple_trajectories.cpp.o
+
+src/xarm_multiple_trajectories.i: src/xarm_multiple_trajectories.cpp.i
+
+.PHONY : src/xarm_multiple_trajectories.i
+
+# target to preprocess a source file
+src/xarm_multiple_trajectories.cpp.i:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_planner/CMakeFiles/xarm_mul_traj.dir/build.make xarm_planner/CMakeFiles/xarm_mul_traj.dir/src/xarm_multiple_trajectories.cpp.i
+.PHONY : src/xarm_multiple_trajectories.cpp.i
+
+src/xarm_multiple_trajectories.s: src/xarm_multiple_trajectories.cpp.s
+
+.PHONY : src/xarm_multiple_trajectories.s
+
+# target to generate assembly for a file
+src/xarm_multiple_trajectories.cpp.s:
+	cd /home/caesar/Desktop/ROS/xarm_ws/build && $(MAKE) -f xarm_planner/CMakeFiles/xarm_mul_traj.dir/build.make xarm_planner/CMakeFiles/xarm_mul_traj.dir/src/xarm_multiple_trajectories.cpp.s
+.PHONY : src/xarm_multiple_trajectories.cpp.s
+
 src/xarm_simple_planner.o: src/xarm_simple_planner.cpp.o
 
 .PHONY : src/xarm_simple_planner.o
@@ -1197,6 +1239,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/local"
+	@echo "... xarm_mul_traj"
 	@echo "... xarm_planner_genpy"
 	@echo "... edit_cache"
 	@echo "... xarm_planner_geneus"
@@ -1270,6 +1313,9 @@ help:
 	@echo "... src/xarm_gripper_planner.o"
 	@echo "... src/xarm_gripper_planner.i"
 	@echo "... src/xarm_gripper_planner.s"
+	@echo "... src/xarm_multiple_trajectories.o"
+	@echo "... src/xarm_multiple_trajectories.i"
+	@echo "... src/xarm_multiple_trajectories.s"
 	@echo "... src/xarm_simple_planner.o"
 	@echo "... src/xarm_simple_planner.i"
 	@echo "... src/xarm_simple_planner.s"

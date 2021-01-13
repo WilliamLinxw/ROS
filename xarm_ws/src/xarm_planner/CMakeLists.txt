@@ -224,3 +224,7 @@ target_link_libraries(xarm_gripper_planner ${catkin_LIBRARIES})
 add_executable(xarm_circle src/xarm_circle.cpp)
 add_dependencies(xarm_circle ${${PROJECT_NAME}_EXPORTED_TARGETS})
 target_link_libraries(xarm_circle ${catkin_LIBRARIES})
+
+add_executable(xarm_mul_traj src/xarm_multiple_trajectories.cpp)
+add_dependencies(xarm_mul_traj ${${PROJECT_NAME}_EXPORTED_TARGETS})
+target_link_libraries(xarm_mul_traj ${catkin_LIBRARIES})

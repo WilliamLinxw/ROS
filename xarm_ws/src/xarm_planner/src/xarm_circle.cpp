@@ -8,6 +8,7 @@ using namespace std;
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "draw_a_circle");
+    ros::NodeHandle node_handle;
     ros::AsyncSpinner spinner(1);
     spinner.start();
 

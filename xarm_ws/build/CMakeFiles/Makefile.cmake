@@ -590,6 +590,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/DependInfo.cmake"
   "xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/DependInfo.cmake"
   "xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir/DependInfo.cmake"
+  "xarm_planner/CMakeFiles/xarm_mul_traj.dir/DependInfo.cmake"
   "xarm_planner/CMakeFiles/xarm_planner_genpy.dir/DependInfo.cmake"
   "xarm_planner/CMakeFiles/xarm_planner_geneus.dir/DependInfo.cmake"
   "xarm_planner/CMakeFiles/xarm_planner_gencpp.dir/DependInfo.cmake"

@@ -1988,6 +1988,19 @@ xarm_gripper_gencpp/fast:
 .PHONY : xarm_gripper_gencpp/fast
 
 #=============================================================================
+# Target rules for targets named xarm_mul_traj
+
+# Build rule for target.
+xarm_mul_traj: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_mul_traj
+.PHONY : xarm_mul_traj
+
+# fast build rule for target.
+xarm_mul_traj/fast:
+	$(MAKE) -f xarm_planner/CMakeFiles/xarm_mul_traj.dir/build.make xarm_planner/CMakeFiles/xarm_mul_traj.dir/build
+.PHONY : xarm_mul_traj/fast
+
+#=============================================================================
 # Target rules for targets named xarm_planner_genpy
 
 # Build rule for target.
@@ -2933,6 +2946,7 @@ help:
 	@echo "... _xarm_gripper_generate_messages_check_deps_MoveGoal"
 	@echo "... xarm_gripper_gennodejs"
 	@echo "... xarm_gripper_gencpp"
+	@echo "... xarm_mul_traj"
 	@echo "... xarm_planner_genpy"
 	@echo "... xarm_planner_geneus"
 	@echo "... xarm_planner_gencpp"

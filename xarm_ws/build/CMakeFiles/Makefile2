@@ -1146,7 +1146,7 @@ all: xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 46
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/rule
@@ -1385,12 +1385,12 @@ xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/all: xarm_msgs/CMakeFil
 xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/all: xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/all
 	$(MAKE) -f xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/build.make xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/build.make xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=49,50,51,52,53,54,55,56,57,58 "Built target xarm_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=49,50,51,52,53,54,55,56,57 "Built target xarm_msgs_generate_messages_eus"
 .PHONY : xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/rule
@@ -1533,7 +1533,7 @@ xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/all: xarm_msgs/CMake
 xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/all: xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/all
 	$(MAKE) -f xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/build.make xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/build.make xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=68,69,70,71,72,73,74,75,76 "Built target xarm_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75 "Built target xarm_msgs_generate_messages_nodejs"
 .PHONY : xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1750,7 +1750,7 @@ xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/all: xarm_msgs/CMakeFiles/xarm_msgs_ge
 
 # Build rule for subdir invocation for target.
 xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/rule
@@ -1829,7 +1829,7 @@ xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/all: xarm_msgs/CMakeFi
 xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/all: xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/all
 	$(MAKE) -f xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/build.make xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/build.make xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=59,60,61,62,63,64,65,66,67 "Built target xarm_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=58,59,60,61,62,63,64,65,66 "Built target xarm_msgs_generate_messages_lisp"
 .PHONY : xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1913,7 +1913,7 @@ xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/all: xarm_msgs/CMakeFile
 xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/all: xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/all
 	$(MAKE) -f xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/build.make xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/build.make xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=77,78,79,80,81,82,83,84,85,86 "Built target xarm_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=76,77,78,79,80,81,82,83,84,85 "Built target xarm_msgs_generate_messages_py"
 .PHONY : xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2865,7 +2865,7 @@ all: xarm_api/CMakeFiles/xarm_driver_node.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_api/CMakeFiles/xarm_driver_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_driver_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_api/CMakeFiles/xarm_driver_node.dir/rule
@@ -2968,7 +2968,7 @@ all: xarm_api/CMakeFiles/xarm_api.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_api/CMakeFiles/xarm_api.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 52
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/xarm_api.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_api/CMakeFiles/xarm_api.dir/rule
@@ -3005,7 +3005,7 @@ all: xarm_api/CMakeFiles/example1_report_norm_node.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_api/CMakeFiles/example1_report_norm_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 52
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/example1_report_norm_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
@@ -3042,7 +3042,7 @@ all: xarm_api/CMakeFiles/move_test.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_api/CMakeFiles/move_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 53
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/move_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_api/CMakeFiles/move_test.dir/rule
@@ -3080,7 +3080,7 @@ all: xarm_api/CMakeFiles/test_tool_modbus.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_api/CMakeFiles/test_tool_modbus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/test_tool_modbus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_api/CMakeFiles/test_tool_modbus.dir/rule
@@ -3149,7 +3149,7 @@ all: xarm_api/CMakeFiles/servo_cart_test.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_api/CMakeFiles/servo_cart_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 53
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_api/CMakeFiles/servo_cart_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_api/CMakeFiles/servo_cart_test.dir/rule
@@ -3237,7 +3237,7 @@ xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/all: xarm_controlle
 xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/all: xarm_controller/CMakeFiles/xarm_hw.dir/all
 	$(MAKE) -f xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build.make xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/depend
 	$(MAKE) -f xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build.make xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target xarm_combined_traj_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=19 "Built target xarm_combined_traj_controller"
 .PHONY : xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/all
 
 # Include target in all.
@@ -3594,7 +3594,7 @@ xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_controller/CMakeFiles/
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all: xarm_controller/CMakeFiles/xarm_hw.dir/all
 	$(MAKE) -f xarm_controller/CMakeFiles/xarm_combined_hw.dir/build.make xarm_controller/CMakeFiles/xarm_combined_hw.dir/depend
 	$(MAKE) -f xarm_controller/CMakeFiles/xarm_combined_hw.dir/build.make xarm_controller/CMakeFiles/xarm_combined_hw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=19 "Built target xarm_combined_hw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=18 "Built target xarm_combined_hw"
 .PHONY : xarm_controller/CMakeFiles/xarm_combined_hw.dir/all
 
 # Include target in all.
@@ -3604,7 +3604,7 @@ all: xarm_controller/CMakeFiles/xarm_combined_hw.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_controller/CMakeFiles/xarm_combined_hw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_controller/CMakeFiles/xarm_combined_hw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_controller/CMakeFiles/xarm_combined_hw.dir/rule
@@ -4186,7 +4186,7 @@ all: xarm_controller/CMakeFiles/sample_motion.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_controller/CMakeFiles/sample_motion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_controller/CMakeFiles/sample_motion.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_controller/CMakeFiles/sample_motion.dir/rule
@@ -4510,7 +4510,7 @@ all: xarm_controller/CMakeFiles/xarm_hw.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_controller/CMakeFiles/xarm_hw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_controller/CMakeFiles/xarm_hw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_controller/CMakeFiles/xarm_hw.dir/rule
@@ -4549,7 +4549,7 @@ all: xarm_controller/CMakeFiles/xarm_traj_controller.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_controller/CMakeFiles/xarm_traj_controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_controller/CMakeFiles/xarm_traj_controller.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_controller/CMakeFiles/xarm_traj_controller.dir/rule
@@ -4680,7 +4680,7 @@ all: xarm_gripper/CMakeFiles/gripper_action_server.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_gripper/CMakeFiles/gripper_action_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 56
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_gripper/CMakeFiles/gripper_action_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_gripper/CMakeFiles/gripper_action_server.dir/rule
@@ -4715,12 +4715,12 @@ xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/all: xarm_gripper/
 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/all: xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/all
 	$(MAKE) -f xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/build.make xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/depend
 	$(MAKE) -f xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/build.make xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=35,36,37,38 "Built target xarm_gripper_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=35,36,37 "Built target xarm_gripper_generate_messages_py"
 .PHONY : xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/rule
@@ -4784,7 +4784,7 @@ xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/all: xarm_gripper/CMakeFiles/xar
 
 # Build rule for subdir invocation for target.
 xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/rule
@@ -4825,7 +4825,7 @@ all: xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/rule
@@ -5022,7 +5022,7 @@ all: xarm_gripper/CMakeFiles/gripper_client.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_gripper/CMakeFiles/gripper_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 57
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_gripper/CMakeFiles/gripper_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_gripper/CMakeFiles/gripper_client.dir/rule
@@ -5121,12 +5121,12 @@ xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/all: xarm_gripper
 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/all: xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/all
 	$(MAKE) -f xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/build.make xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/depend
 	$(MAKE) -f xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/build.make xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=25,26,27,28 "Built target xarm_gripper_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=25,26,27 "Built target xarm_gripper_generate_messages_eus"
 .PHONY : xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/rule
@@ -5158,7 +5158,7 @@ xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/all: xarm_gripper/CMakeFiles/xarm
 
 # Build rule for subdir invocation for target.
 xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/rule
@@ -5193,7 +5193,7 @@ xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/all: xarm_grippe
 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/all: xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/all
 	$(MAKE) -f xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/build.make xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/depend
 	$(MAKE) -f xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/build.make xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=29,30,31 "Built target xarm_gripper_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=28,29,30 "Built target xarm_gripper_generate_messages_lisp"
 .PHONY : xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5433,12 +5433,12 @@ xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/all: xarm_grip
 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/all: xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/all
 	$(MAKE) -f xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/build.make xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/depend
 	$(MAKE) -f xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/build.make xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=32,33,34 "Built target xarm_gripper_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=31,32,33,34 "Built target xarm_gripper_generate_messages_nodejs"
 .PHONY : xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/rule
@@ -5502,7 +5502,7 @@ xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/all: xarm_gripper/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/rule
@@ -5558,6 +5558,7 @@ clean: xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir/clean
 # Directory level rules for directory xarm_planner
 
 # Convenience name for "all" pass in the directory.
+xarm_planner/all: xarm_planner/CMakeFiles/xarm_mul_traj.dir/all
 xarm_planner/all: xarm_planner/CMakeFiles/xarm_simple_planner.dir/all
 xarm_planner/all: xarm_planner/CMakeFiles/xarm_planner_generate_messages.dir/all
 xarm_planner/all: xarm_planner/CMakeFiles/xarm_gripper_planner.dir/all
@@ -5567,6 +5568,7 @@ xarm_planner/all: xarm_planner/CMakeFiles/xarm_circle.dir/all
 .PHONY : xarm_planner/all
 
 # Convenience name for "clean" pass in the directory.
+xarm_planner/clean: xarm_planner/CMakeFiles/xarm_mul_traj.dir/clean
 xarm_planner/clean: xarm_planner/CMakeFiles/xarm_planner_genpy.dir/clean
 xarm_planner/clean: xarm_planner/CMakeFiles/xarm_planner_geneus.dir/clean
 xarm_planner/clean: xarm_planner/CMakeFiles/xarm_planner_gencpp.dir/clean
@@ -5635,6 +5637,47 @@ xarm_planner/clean: xarm_planner/CMakeFiles/graph_msgs_generate_messages_py.dir/
 xarm_planner/preinstall:
 
 .PHONY : xarm_planner/preinstall
+
+#=============================================================================
+# Target rules for target xarm_planner/CMakeFiles/xarm_mul_traj.dir
+
+# All Build rule for target.
+xarm_planner/CMakeFiles/xarm_mul_traj.dir/all: xarm_planner/CMakeFiles/xarm_planner_generate_messages_cpp.dir/all
+xarm_planner/CMakeFiles/xarm_mul_traj.dir/all: xarm_planner/CMakeFiles/xarm_planner_generate_messages_nodejs.dir/all
+xarm_planner/CMakeFiles/xarm_mul_traj.dir/all: xarm_planner/CMakeFiles/xarm_planner_generate_messages_eus.dir/all
+xarm_planner/CMakeFiles/xarm_mul_traj.dir/all: xarm_planner/CMakeFiles/xarm_planner_generate_messages_py.dir/all
+xarm_planner/CMakeFiles/xarm_mul_traj.dir/all: xarm_planner/CMakeFiles/xarm_planner_generate_messages_lisp.dir/all
+	$(MAKE) -f xarm_planner/CMakeFiles/xarm_mul_traj.dir/build.make xarm_planner/CMakeFiles/xarm_mul_traj.dir/depend
+	$(MAKE) -f xarm_planner/CMakeFiles/xarm_mul_traj.dir/build.make xarm_planner/CMakeFiles/xarm_mul_traj.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=86 "Built target xarm_mul_traj"
+.PHONY : xarm_planner/CMakeFiles/xarm_mul_traj.dir/all
+
+# Include target in all.
+all: xarm_planner/CMakeFiles/xarm_mul_traj.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+xarm_planner/CMakeFiles/xarm_mul_traj.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_planner/CMakeFiles/xarm_mul_traj.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
+.PHONY : xarm_planner/CMakeFiles/xarm_mul_traj.dir/rule
+
+# Convenience name for target.
+xarm_mul_traj: xarm_planner/CMakeFiles/xarm_mul_traj.dir/rule
+
+.PHONY : xarm_mul_traj
+
+# clean rule for target.
+xarm_planner/CMakeFiles/xarm_mul_traj.dir/clean:
+	$(MAKE) -f xarm_planner/CMakeFiles/xarm_mul_traj.dir/build.make xarm_planner/CMakeFiles/xarm_mul_traj.dir/clean
+.PHONY : xarm_planner/CMakeFiles/xarm_mul_traj.dir/clean
+
+# clean rule for target.
+clean: xarm_planner/CMakeFiles/xarm_mul_traj.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target xarm_planner/CMakeFiles/xarm_planner_genpy.dir
@@ -6347,7 +6390,7 @@ xarm_planner/CMakeFiles/xarm_gripper_planner.dir/all: xarm_planner/CMakeFiles/xa
 xarm_planner/CMakeFiles/xarm_gripper_planner.dir/all: xarm_planner/CMakeFiles/xarm_planner_generate_messages_lisp.dir/all
 	$(MAKE) -f xarm_planner/CMakeFiles/xarm_gripper_planner.dir/build.make xarm_planner/CMakeFiles/xarm_gripper_planner.dir/depend
 	$(MAKE) -f xarm_planner/CMakeFiles/xarm_gripper_planner.dir/build.make xarm_planner/CMakeFiles/xarm_gripper_planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target xarm_gripper_planner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=38 "Built target xarm_gripper_planner"
 .PHONY : xarm_planner/CMakeFiles/xarm_gripper_planner.dir/all
 
 # Include target in all.
@@ -6357,7 +6400,7 @@ all: xarm_planner/CMakeFiles/xarm_gripper_planner.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_planner/CMakeFiles/xarm_gripper_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_planner/CMakeFiles/xarm_gripper_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_planner/CMakeFiles/xarm_gripper_planner.dir/rule
@@ -7532,7 +7575,7 @@ xarm_planner/CMakeFiles/xarm_circle.dir/all: xarm_planner/CMakeFiles/xarm_planne
 xarm_planner/CMakeFiles/xarm_circle.dir/all: xarm_planner/CMakeFiles/xarm_planner_generate_messages_lisp.dir/all
 	$(MAKE) -f xarm_planner/CMakeFiles/xarm_circle.dir/build.make xarm_planner/CMakeFiles/xarm_circle.dir/depend
 	$(MAKE) -f xarm_planner/CMakeFiles/xarm_circle.dir/build.make xarm_planner/CMakeFiles/xarm_circle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num=18 "Built target xarm_circle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles --progress-num= "Built target xarm_circle"
 .PHONY : xarm_planner/CMakeFiles/xarm_circle.dir/all
 
 # Include target in all.
@@ -7542,7 +7585,7 @@ all: xarm_planner/CMakeFiles/xarm_circle.dir/all
 
 # Build rule for subdir invocation for target.
 xarm_planner/CMakeFiles/xarm_circle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 xarm_planner/CMakeFiles/xarm_circle.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caesar/Desktop/ROS/xarm_ws/build/CMakeFiles 0
 .PHONY : xarm_planner/CMakeFiles/xarm_circle.dir/rule
