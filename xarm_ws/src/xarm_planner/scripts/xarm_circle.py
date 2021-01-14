@@ -39,9 +39,8 @@ class MoveCircle(object):
         group_names = robot.get_group_names()
         print "============ Available Planning Groups:", robot.get_group_names()
 
-        print "============ Printing robot state"
+        print "============ Printing robot state ============"
         print robot.get_current_state()
-        print "============"
 
         # Misc variables
         self.box_name = ''
@@ -82,7 +81,7 @@ class MoveCircle(object):
         current_pose = xarm7.get_current_pose().pose
         centerX = current_pose.position.x
         centerY = current_pose.position.y
-        radius = 0.05
+        radius = 0.1
 
         # Create a circle waypoints
         waypoints = []
@@ -95,14 +94,16 @@ class MoveCircle(object):
         #     theta += 0.01
         #     print(theta)
         target_pose = xarm7.get_current_pose().pose
-        theta = np.arange(0, 2*np.pi, 0.01)
+        theta = np.arange(0, 4*np.pi, 0.01)
         x = centerX + radius * np.cos(theta)
         y = centerY + radius * np.sin(theta)
         for i in range(len(x)):
             target_pose.position.x = x[i]
             target_pose.position.y = y[i]
             waypoints.append(copy.deepcopy(target_pose))
-        print("Waypoints: ", waypoints)
+        # print("Waypoints: ", waypoints)
+        print(waypoints[0])
+        print(type(waypoints[0]))
 
         # Compute the Cartesian path
         fraction = 0
@@ -118,7 +119,7 @@ class MoveCircle(object):
             if attempts % 10 == 0:
                 print("Still trying after %d attempts ...", attempts)
 
-        # Execute the plan if it is successfully planned
+        # Execute the plan if it is successfully planned, or print how many trials attempted
         if fraction == 1:
             print("Path computed successfully. Moving the arm.")
             xarm7.execute(plan, wait=True)
@@ -127,14 +128,13 @@ class MoveCircle(object):
         
         rospy.sleep(1)
 
-        print "============ Motion finished ============"
-
 def main():
     arm = MoveCircle()
 
-    print "============ Press `Enter` to execute a movement function ..."
+    print "============ Press `Enter` to execute a movement function ============"
     raw_input()
     arm.move_circle()
+    print "============ Motion finished ============"
 
 if __name__ == '__main__':
     while not rospy.is_shutdown():
