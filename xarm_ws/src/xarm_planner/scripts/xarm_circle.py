@@ -39,8 +39,16 @@ class MoveCircle(object):
         group_names = robot.get_group_names()
         print "============ Available Planning Groups:", robot.get_group_names()
 
+        # We can get the current state of the robot
         print "============ Printing robot state ============"
         print robot.get_current_state()
+
+        # Set the reference frame of the end effector
+        reference_frame = "world"
+        move_group.set_pose_reference_frame(reference_frame)
+
+        # Allow replanning
+        move_group.allow_replanning(True)
 
         # Misc variables
         self.box_name = ''
@@ -101,9 +109,9 @@ class MoveCircle(object):
             target_pose.position.x = x[i]
             target_pose.position.y = y[i]
             waypoints.append(copy.deepcopy(target_pose))
+        
+        # Visualize the waypoints
         # print("Waypoints: ", waypoints)
-        print(waypoints[0])
-        print(type(waypoints[0]))
 
         # Compute the Cartesian path
         fraction = 0
@@ -118,6 +126,9 @@ class MoveCircle(object):
 
             if attempts % 10 == 0:
                 print("Still trying after %d attempts ...", attempts)
+        
+        # Visualize the plan, where the positions, velocity and accelerations of all joints stored
+        # print("Plan: ", plan)
 
         # Execute the plan if it is successfully planned, or print how many trials attempted
         if fraction == 1:
