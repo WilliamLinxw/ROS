@@ -2003,6 +2003,24 @@ clean: xarm_msgs/CMakeFiles/xarm_msgs_genpy.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory aisr_description
+
+# Convenience name for "all" pass in the directory.
+aisr_description/all:
+
+.PHONY : aisr_description/all
+
+# Convenience name for "clean" pass in the directory.
+aisr_description/clean:
+
+.PHONY : aisr_description/clean
+
+# Convenience name for "preinstall" pass in the directory.
+aisr_description/preinstall:
+
+.PHONY : aisr_description/preinstall
+
+#=============================================================================
 # Directory level rules for directory examples/xarm7_redundancy_res
 
 # Convenience name for "all" pass in the directory.

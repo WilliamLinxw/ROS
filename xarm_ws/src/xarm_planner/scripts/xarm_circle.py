@@ -128,7 +128,8 @@ class MoveCircle(object):
                 print("Still trying after %d attempts ...", attempts)
         
         # Visualize the plan, where the positions, velocity and accelerations of all joints stored
-        # print("Plan: ", plan)
+        print("Plan: ", plan)
+        print(type(plan))
 
         # Execute the plan if it is successfully planned, or print how many trials attempted
         if fraction == 1:
