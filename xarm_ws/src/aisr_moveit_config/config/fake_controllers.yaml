@@ -1,0 +1,27 @@
+controller_list:
+  - name: fake_white_arm_controller
+    joints:
+      - white1_joint
+      - white2_joint
+      - white3_joint
+      - white4_joint
+      - white5_joint
+  - name: fake_black_arm_controller
+    joints:
+      - black1_joint
+      - black2_joint
+      - black3_joint
+      - black4_joint
+      - black5_joint
+      - black6_joint
+      - black7_joint
+  - name: fake_torso_controller
+    joints:
+      - waist1_joint
+      - waist2_joint
+      - waist3_joint
+      - neck1_joint
+      - neck2_joint
+initial:  # Define initial robot poses.
+  - group: white_arm
+    pose: home_pose

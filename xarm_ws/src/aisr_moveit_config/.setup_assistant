@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: aisr
+    relative_path: urdf/aisr.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/aisr.srdf
+  CONFIG:
+    author_name: Xiaowei(Caesar) LIn
+    author_email: xiaowei.lin1997@gmail.com
+    generated_timestamp: 1610959739
