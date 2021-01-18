@@ -3,10 +3,197 @@
      Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="aisr_description">
-  <link
-    name="dummy_link">
-  </link>
+  name="aisr">
+
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
+      <robotNamespace>/aisr</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="base_link">
+    <selfCollide>false</selfCollide>
+    <sensor name="base_contact_sensor" type="contact">
+      <always_on>true</always_on>
+      <update_rate>100.0</update_rate>
+      <contact>
+        <collision>base_link_collision</collision>
+      </contact>
+      <plugin filename="libgazebo_ros_bumper.so" name="base_gazebo_ros_bumper_controller">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>100.0</updateRate>
+        <bumperTopicName>base_bumper</bumperTopicName>
+        <frameName>world</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Gray</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Waist_Link1">
+    <material>Gazebo/Gray</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Waist_Link2">
+    <material>Gazebo/Gray</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Waist_Link3">
+    <material>Gazebo/Gray</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Neck_Link1">
+    <material>Gazebo/Gray</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Neck_Link2">
+    <material>Gazebo/Gray</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="White_Link1">
+    <material>Gazebo/White</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="White_Link2">
+    <material>Gazebo/White</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="White_Link3">
+    <material>Gazebo/White</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="White_Link4">
+    <material>Gazebo/White</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="White_Link5">
+    <material>Gazebo/White</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Black_Link1">
+    <material>Gazebo/Black</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Black_Link2">
+    <material>Gazebo/Black</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Black_Link3">
+    <material>Gazebo/Black</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Black_Link4">
+    <material>Gazebo/Black</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Black_Link5">
+    <material>Gazebo/Black</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Black_Link6">
+    <material>Gazebo/Black</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Black_Link7">
+    <material>Gazebo/Black</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>  
+
+  <gazebo reference="waist1_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="waist2_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="waist3_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="neck1_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="neck2_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="white1_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="white2_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="white3_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="white4_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="white5_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="black1_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="black2_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="black3_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="black4_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="black5_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="black6_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+  <gazebo reference="black7_joint">
+    <stopKd value="1.0"/>
+    <stopKp value="1000000.0"/>
+    <fudgeFactor value="0.5"/>
+  </gazebo>
+
+  <link name="world"/>
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+
   <link
     name="base_link">
     <inertial>
@@ -25,11 +212,11 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
+        xyz="0 0 0.5"
+        rpy="1.5707963267949 0 -1.5707963267949" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/base_link.STL" />
+          filename="package://aisr/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -39,22 +226,14 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
+        xyz="0 0 0.5"
+        rpy="1.5707963267949 0 -1.5707963267949" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/base_link.STL" />
+          filename="package://aisr/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
-  <joint
-    name="dummy_joint"
-    type="fixed">
-    <parent
-      link="dummy_link"/>
-    <child
-      link="base_link"/>
-  </joint>
   <link
     name="Waist_Link1">
     <inertial>
@@ -77,7 +256,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Waist_Link1.STL" />
+          filename="package://aisr/meshes/Waist_Link1.STL" />
       </geometry>
       <material
         name="">
@@ -91,16 +270,21 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Waist_Link1.STL" />
+          filename="package://aisr/meshes/Waist_Link1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="waist1"
+    name="waist1_joint"
     type="revolute">
+    <origin
+      xyz="0 0 0.5625"
+      rpy="0 0 -1.5707963267949" />
+    <!-- 
     <origin
       xyz="0 0.0625 0"
       rpy="-1.5708 0 0" />
+    -->
     <parent
       link="base_link" />
     <child
@@ -108,10 +292,11 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-0.2"
+      upper="0.2"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
     name="Waist_Link2">
@@ -135,7 +320,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Waist_Link2.STL" />
+          filename="package://aisr/meshes/Waist_Link2.STL" />
       </geometry>
       <material
         name="">
@@ -149,12 +334,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Waist_Link2.STL" />
+          filename="package://aisr/meshes/Waist_Link2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="waist2"
+    name="waist2_joint"
     type="revolute">
     <origin
       xyz="0 0 0.0685"
@@ -166,10 +351,11 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-0.01"
+      upper="0.01"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
     name="Waist_Link3">
@@ -193,7 +379,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Waist_Link3.STL" />
+          filename="package://aisr/meshes/Waist_Link3.STL" />
       </geometry>
       <material
         name="">
@@ -207,12 +393,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Waist_Link3.STL" />
+          filename="package://aisr/meshes/Waist_Link3.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="waist3"
+    name="waist3_joint"
     type="revolute">
     <origin
       xyz="0 -0.105 0.0007"
@@ -224,10 +410,11 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-0.01"
+      upper="0.01"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
     name="Neck_Link1">
@@ -251,7 +438,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Neck_Link1.STL" />
+          filename="package://aisr/meshes/Neck_Link1.STL" />
       </geometry>
       <material
         name="">
@@ -265,12 +452,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Neck_Link1.STL" />
+          filename="package://aisr/meshes/Neck_Link1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="neck1"
+    name="neck1_joint"
     type="revolute">
     <origin
       xyz="0.0005 -0.22275 -0.0002"
@@ -282,10 +469,11 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-0.2"
+      upper="0.2"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
     name="Neck_Link2">
@@ -309,7 +497,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Neck_Link2.STL" />
+          filename="package://aisr/meshes/Neck_Link2.STL" />
       </geometry>
       <material
         name="">
@@ -323,12 +511,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Neck_Link2.STL" />
+          filename="package://aisr/meshes/Neck_Link2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="neck2"
+    name="neck2_joint"
     type="revolute">
     <origin
       xyz="0.0002 0 0.0415"
@@ -340,10 +528,11 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-0.2"
+      upper="0.2"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
     name="White_Link1">
@@ -367,7 +556,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/White_Link1.STL" />
+          filename="package://aisr/meshes/White_Link1.STL" />
       </geometry>
       <material
         name="">
@@ -381,12 +570,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/White_Link1.STL" />
+          filename="package://aisr/meshes/White_Link1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="white1"
+    name="white1_joint"
     type="revolute">
     <origin
       xyz="0.20962 -0.16689 -0.0002"
@@ -398,10 +587,11 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="0.0"
+      upper="2.0"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="30.0" friction="0.3"/>
   </joint>
   <link
     name="White_Link2">
@@ -425,7 +615,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/White_Link2.STL" />
+          filename="package://aisr/meshes/White_Link2.STL" />
       </geometry>
       <material
         name="">
@@ -439,12 +629,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/White_Link2.STL" />
+          filename="package://aisr/meshes/White_Link2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="white2"
+    name="white2_joint"
     type="revolute">
     <origin
       xyz="0 0 0.055"
@@ -456,10 +646,11 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="0.0"
+      upper="1.5"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="10.0" friction="0.3"/>
   </joint>
   <link
     name="White_Link3">
@@ -483,7 +674,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/White_Link3.STL" />
+          filename="package://aisr/meshes/White_Link3.STL" />
       </geometry>
       <material
         name="">
@@ -497,12 +688,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/White_Link3.STL" />
+          filename="package://aisr/meshes/White_Link3.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="white3"
+    name="white3_joint"
     type="revolute">
     <origin
       xyz="0 -0.08 0.0045"
@@ -514,10 +705,11 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-1.5"
+      upper="1.5"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="10.0" friction="0.3"/>
   </joint>
   <link
     name="White_Link4">
@@ -541,7 +733,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/White_Link4.STL" />
+          filename="package://aisr/meshes/White_Link4.STL" />
       </geometry>
       <material
         name="">
@@ -555,12 +747,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/White_Link4.STL" />
+          filename="package://aisr/meshes/White_Link4.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="white4"
+    name="white4_joint"
     type="revolute">
     <origin
       xyz="0 0 -0.163"
@@ -572,10 +764,11 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="0.0"
+      upper="2.0"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="5.0" friction="0.3"/>
   </joint>
   <link
     name="White_Link5">
@@ -599,7 +792,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/White_Link5.STL" />
+          filename="package://aisr/meshes/White_Link5.STL" />
       </geometry>
       <material
         name="">
@@ -613,16 +806,16 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/White_Link5.STL" />
+          filename="package://aisr/meshes/White_Link5.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="white5"
+    name="white5_joint"
     type="revolute">
     <origin
       xyz="0 -0.06 0"
-      rpy="1.5708 -1.5708 0" />
+      rpy="-1.5708 -1.5708 0" />
     <parent
       link="White_Link4" />
     <child
@@ -630,11 +823,13 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-1.5"
+      upper="1.5"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="5.0" friction="0.3"/>
   </joint>
+
   <link
     name="Black_Link1">
     <inertial>
@@ -657,7 +852,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link1.STL" />
+          filename="package://aisr/meshes/Black_Link1.STL" />
       </geometry>
       <material
         name="">
@@ -671,12 +866,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link1.STL" />
+          filename="package://aisr/meshes/Black_Link1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="black1"
+    name="black1_joint"
     type="revolute">
     <origin
       xyz="-0.13313 -0.14666 -0.0002"
@@ -688,10 +883,11 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-2.0"
+      upper="0.0"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="30.0" friction="0.3"/>
   </joint>
   <link
     name="Black_Link2">
@@ -715,7 +911,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link2.STL" />
+          filename="package://aisr/meshes/Black_Link2.STL" />
       </geometry>
       <material
         name="">
@@ -729,12 +925,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link2.STL" />
+          filename="package://aisr/meshes/Black_Link2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="black2"
+    name="black2_joint"
     type="revolute">
     <origin
       xyz="0 0 -0.1165"
@@ -746,10 +942,11 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="0.0"
+      upper="1.5"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="20.0" friction="0.3"/>
   </joint>
   <link
     name="black_Link3">
@@ -773,13 +970,13 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/black_Link3.STL" />
+          filename="package://aisr/meshes/black_Link3.STL" />
       </geometry>
       <material
         name="">
         <color
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      </material>      
     </visual>
     <collision>
       <origin
@@ -787,12 +984,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/black_Link3.STL" />
+          filename="package://aisr/meshes/black_Link3.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="black3"
+    name="black3_joint"
     type="revolute">
     <origin
       xyz="0 -0.11415 -0.0002"
@@ -804,10 +1001,11 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-1.5"
+      upper="1.5"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="10.0" friction="0.3"/>
   </joint>
   <link
     name="Black_Link4">
@@ -831,7 +1029,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link4.STL" />
+          filename="package://aisr/meshes/Black_Link4.STL" />
       </geometry>
       <material
         name="">
@@ -845,12 +1043,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link4.STL" />
+          filename="package://aisr/meshes/Black_Link4.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="black4"
+    name="black4_joint"
     type="revolute">
     <origin
       xyz="0 0 -0.1482"
@@ -862,10 +1060,11 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="0.0"
+      upper="2.0"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="10.0" friction="0.3"/>
   </joint>
   <link
     name="Black_Link5">
@@ -889,7 +1088,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link5.STL" />
+          filename="package://aisr/meshes/Black_Link5.STL" />
       </geometry>
       <material
         name="">
@@ -903,16 +1102,16 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link5.STL" />
+          filename="package://aisr/meshes/Black_Link5.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="black5"
+    name="black5_joint"
     type="revolute">
     <origin
       xyz="0 -0.10775 0"
-      rpy="1.5708 -1.5708 0" />
+      rpy="-1.5708 -1.5708 0" />
     <parent
       link="Black_Link4" />
     <child
@@ -920,10 +1119,11 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-1.5"
+      upper="1.5"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="1.0" friction="0.3"/>
   </joint>
   <link
     name="Black_Link6">
@@ -947,7 +1147,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link6.STL" />
+          filename="package://aisr/meshes/Black_Link6.STL" />
       </geometry>
       <material
         name="">
@@ -961,12 +1161,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link6.STL" />
+          filename="package://aisr/meshes/Black_Link6.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="black6"
+    name="black6_joint"
     type="revolute">
     <origin
       xyz="0 0 -0.0481"
@@ -978,10 +1178,11 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-1.5"
+      upper="1.5"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
     name="Black_Link7">
@@ -1005,7 +1206,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link7.STL" />
+          filename="package://aisr/meshes/Black_Link7.STL" />
       </geometry>
       <material
         name="">
@@ -1019,12 +1220,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://aisr_description/meshes/Black_Link7.STL" />
+          filename="package://aisr/meshes/Black_Link7.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="black7"
+    name="black7_joint"
     type="revolute">
     <origin
       xyz="0 -0.078 0"
@@ -1036,9 +1237,198 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-1.5"
+      upper="1.5"
+      effort="100.0"
+      velocity="1.0" />
+    <dynamics damping="0.1" friction="0.3"/>
   </joint>
+
+  <transmission name="waist1_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="waist1_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="waist1_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="waist2_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="waist2_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="waist2_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="waist3_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="waist3_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="waist3_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="neck1_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="neck1_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="neck1_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="neck2_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="neck2_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="neck2_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="white1_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="white1_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="white1_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="white2_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="white2_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="white2_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="white3_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="white3_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="white3_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="white4_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="white4_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="white4_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="white5_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="white5_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="white5_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="black1_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="black1_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="black1_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="black2_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="black2_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="black2_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="black3_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="black3_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="black3_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="black4_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="black4_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="black4_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="black5_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="black5_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="black5_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="black6_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="black6_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="black6_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="black7_trans"> 
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="black7_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="black7_moter">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>32.6</mechanicalReduction>
+    </actuator>
+  </transmission>
+
 </robot>

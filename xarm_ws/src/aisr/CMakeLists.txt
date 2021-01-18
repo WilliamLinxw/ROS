@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(aisr_description)
+project(aisr)
 
 find_package(catkin REQUIRED)
 

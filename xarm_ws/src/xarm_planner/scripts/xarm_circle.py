@@ -10,9 +10,9 @@ from math import *
 from std_msgs.msg import String
 import numpy as np
 
-class MoveCircle(object):
+class Arm(object):
     def __init__(self):
-        super(MoveCircle, self).__init__()
+        super(Arm, self).__init__()
 
         print "================ Setup ================="
         moveit_commander.roscpp_initialize(sys.argv)
@@ -141,7 +141,7 @@ class MoveCircle(object):
         rospy.sleep(1)
 
 def main():
-    arm = MoveCircle()
+    arm = Arm()
 
     print "============ Press `Enter` to execute a movement function ============"
     raw_input()

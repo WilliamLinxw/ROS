@@ -1,0 +1,59 @@
+digraph G {
+node [shape=box];
+"world" [label="world"];
+"base_link" [label="base_link"];
+"Waist_Link1" [label="Waist_Link1"];
+"Waist_Link2" [label="Waist_Link2"];
+"Waist_Link3" [label="Waist_Link3"];
+"Black_Link1" [label="Black_Link1"];
+"Black_Link2" [label="Black_Link2"];
+"black_Link3" [label="black_Link3"];
+"Black_Link4" [label="Black_Link4"];
+"Black_Link5" [label="Black_Link5"];
+"Black_Link6" [label="Black_Link6"];
+"Black_Link7" [label="Black_Link7"];
+"Neck_Link1" [label="Neck_Link1"];
+"Neck_Link2" [label="Neck_Link2"];
+"White_Link1" [label="White_Link1"];
+"White_Link2" [label="White_Link2"];
+"White_Link3" [label="White_Link3"];
+"White_Link4" [label="White_Link4"];
+"White_Link5" [label="White_Link5"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"world" -> "fixed" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"fixed" -> "base_link"
+"base_link" -> "waist1" [label="xyz: 0 0.0625 0 \nrpy: -1.5708 0 0"]
+"waist1" -> "Waist_Link1"
+"Waist_Link1" -> "waist2" [label="xyz: 0 0 0.0685 \nrpy: -1.5708 -0 1.5708"]
+"waist2" -> "Waist_Link2"
+"Waist_Link2" -> "waist3" [label="xyz: 0 -0.105 0.0007 \nrpy: 0 1.5708 -0"]
+"waist3" -> "Waist_Link3"
+"Waist_Link3" -> "black1" [label="xyz: -0.13313 -0.14666 -0.0002 \nrpy: -1.5708 -5.55112e-17 -1.309"]
+"black1" -> "Black_Link1"
+"Black_Link1" -> "black2" [label="xyz: 0 0 -0.1165 \nrpy: -1.5708 -1.309 2.14481e-16"]
+"black2" -> "Black_Link2"
+"Black_Link2" -> "black3" [label="xyz: 0 -0.11415 -0.0002 \nrpy: -1.5708 0 0"]
+"black3" -> "black_Link3"
+"black_Link3" -> "black4" [label="xyz: 0 0 -0.1482 \nrpy: 1.5708 -0 1.5708"]
+"black4" -> "Black_Link4"
+"Black_Link4" -> "black5" [label="xyz: 0 -0.10775 0 \nrpy: 0 -1.5708 1.5708"]
+"black5" -> "Black_Link5"
+"Black_Link5" -> "black6" [label="xyz: 0 0 -0.0481 \nrpy: 1.5708 -0 0"]
+"black6" -> "Black_Link6"
+"Black_Link6" -> "black7" [label="xyz: 0 -0.078 0 \nrpy: 0 1.5708 -0"]
+"black7" -> "Black_Link7"
+"Waist_Link3" -> "neck1" [label="xyz: 0.0005 -0.22275 -0.0002 \nrpy: 1.5708 -0 0"]
+"neck1" -> "Neck_Link1"
+"Neck_Link1" -> "neck2" [label="xyz: 0.0002 0 0.0415 \nrpy: 1.5708 -0 1.5708"]
+"neck2" -> "Neck_Link2"
+"Waist_Link3" -> "white1" [label="xyz: 0.20962 -0.16689 -0.0002 \nrpy: 1.5708 -5.55112e-17 1.309"]
+"white1" -> "White_Link1"
+"White_Link1" -> "white2" [label="xyz: 0 0 0.055 \nrpy: 1.5708 -1.309 -2.14481e-16"]
+"white2" -> "White_Link2"
+"White_Link2" -> "white3" [label="xyz: 0 -0.08 0.0045 \nrpy: -1.5708 0 0"]
+"white3" -> "White_Link3"
+"White_Link3" -> "white4" [label="xyz: 0 0 -0.163 \nrpy: 1.5708 -0 1.5708"]
+"white4" -> "White_Link4"
+"White_Link4" -> "white5" [label="xyz: 0 -0.06 0 \nrpy: 0 -1.5708 1.5708"]
+"white5" -> "White_Link5"
+}

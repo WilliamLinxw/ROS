@@ -1,0 +1,40 @@
+<launch>
+
+  <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+  <env name="GAZEBO_MODEL_PATH" value="$(find aisr)/models:$(optenv GAZEBO_MODEL_PATH)" />
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+
+  <!-- We resume the logic in empty_world.launch -->
+  <include file="$(find aisr)/launch/empty_world.launch">
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+  </include>
+
+  <!-- Load the URDF into the ROS Parameter Server -->
+  <param name="robot_description" textfile="$(find aisr)/urdf/aisr.urdf" /> 
+
+  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+  args="-urdf -model aisr -param robot_description"/> 
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find aisr)/config/aisr_control_position.yaml" command="load"/>
+  
+  <!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/aisr" args="waist1_controller waist2_controller waist3_controller neck1_controller neck2_controller white1_controller white2_controller white3_controller white4_controller white5_controller black1_controller black2_controller black3_controller black4_controller black5_controller black6_controller black7_controller"/>
+      
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+    <remap from="/joint_states" to="/aisr/joint_states" />
+  </node>
+
+</launch>

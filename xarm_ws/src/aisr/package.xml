@@ -1,10 +1,10 @@
 <package format="2">
-  <name>aisr_description</name>
+  <name>aisr</name>
   <version>1.0.0</version>
   <description>
-    <p>URDF Description package for AISR</p>
+    <p>URDF Description package for aisr</p>
     <p>This package contains configuration data, 3D models and launch files
-for AISR robot</p>
+for aisr robot</p>
   </description>
   <author>TODO</author>
   <maintainer email="TODO@email.com" />
