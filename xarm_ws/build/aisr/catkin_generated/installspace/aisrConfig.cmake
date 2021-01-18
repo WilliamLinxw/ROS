@@ -66,7 +66,7 @@ endif()
 set(aisr_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
-if("TRUE" STREQUAL "TRUE")
+if("FALSE" STREQUAL "TRUE")
   set(aisr_SOURCE_PREFIX /home/caesar/Desktop/ROS/xarm_ws/src/aisr)
   set(aisr_DEVEL_PREFIX /home/caesar/Desktop/ROS/xarm_ws/devel)
   set(aisr_INSTALL_PREFIX "")
@@ -110,7 +110,7 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'aisr' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'aisr' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/caesar/Desktop/ROS/xarm_ws/src/aisr/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'aisr' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '\${prefix}/${idir}'.  ${_report}")
     endif()
     _list_append_unique(aisr_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/caesar/Desktop/ROS/xarm_ws/devel/lib;/home/caesar/Desktop/ROS/xarm_ws/devel/lib;/home/caesar/Desktop/ROS/ws_moveit/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/caesar/Desktop/ROS/xarm_ws/install/lib;/home/caesar/Desktop/ROS/xarm_ws/devel/lib;/home/caesar/Desktop/ROS/ws_moveit/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

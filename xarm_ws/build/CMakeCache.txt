@@ -303,10 +303,10 @@ actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
 actionlib_msgs_DIR:PATH=/opt/ros/melodic/share/actionlib_msgs/cmake
 
 //Value Computed by CMake
-aisr_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/build/AISR-urdf.SLDASM
+aisr_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/build/aisr
 
 //Value Computed by CMake
-aisr_SOURCE_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/src/AISR-urdf.SLDASM
+aisr_SOURCE_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/src/aisr
 
 //Value Computed by CMake
 aisr_config_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/build/aisr_config
