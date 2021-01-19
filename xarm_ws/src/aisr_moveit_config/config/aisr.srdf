@@ -49,6 +49,38 @@
         <joint name="white4_joint" value="0" />
         <joint name="white5_joint" value="0" />
     </group_state>
+    <group_state name="home_pose" group="black_arm">
+        <joint name="black1_joint" value="0" />
+        <joint name="black2_joint" value="0" />
+        <joint name="black3_joint" value="0" />
+        <joint name="black4_joint" value="0" />
+        <joint name="black5_joint" value="0" />
+        <joint name="black6_joint" value="0" />
+        <joint name="black7_joint" value="0" />
+    </group_state>
+    <group_state name="forward" group="black_arm">
+        <joint name="black1_joint" value="-1.7238" />
+        <joint name="black2_joint" value="0" />
+        <joint name="black3_joint" value="0" />
+        <joint name="black4_joint" value="0" />
+        <joint name="black5_joint" value="0" />
+        <joint name="black6_joint" value="0" />
+        <joint name="black7_joint" value="0" />
+    </group_state>
+    <group_state name="home_pose" group="torso">
+        <joint name="neck1_joint" value="0" />
+        <joint name="neck2_joint" value="0" />
+        <joint name="waist1_joint" value="0" />
+        <joint name="waist2_joint" value="0" />
+        <joint name="waist3_joint" value="0" />
+    </group_state>
+    <group_state name="bend" group="torso">
+        <joint name="neck1_joint" value="0" />
+        <joint name="neck2_joint" value="0" />
+        <joint name="waist1_joint" value="-0.0608" />
+        <joint name="waist2_joint" value="-0.5" />
+        <joint name="waist3_joint" value="0" />
+    </group_state>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="dummy_link" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->

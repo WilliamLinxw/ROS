@@ -25,3 +25,7 @@ controller_list:
 initial:  # Define initial robot poses.
   - group: white_arm
     pose: home_pose
+  - group: black_arm
+    pose: home_pose
+  - group: torso
+    pose: home_pose

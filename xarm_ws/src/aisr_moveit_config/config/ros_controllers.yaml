@@ -34,36 +34,36 @@ joint_state_controller:
   publish_rate: 50
 controller_list:
   []
-white_arm_position_controller:
+torso_position_controller:
   type: position_controllers/JointPositionController
   joints:
-    - white1_joint
-    - white2_joint
-    - white3_joint
-    - white4_joint
-    - white5_joint
+    - waist1_joint
+    - waist2_joint
+    - waist3_joint
+    - neck1_joint
+    - neck2_joint
   gains:
-    white1_joint:
+    waist1_joint:
       p: 100
       d: 1
       i: 1
       i_clamp: 1
-    white2_joint:
+    waist2_joint:
       p: 100
       d: 1
       i: 1
       i_clamp: 1
-    white3_joint:
+    waist3_joint:
       p: 100
       d: 1
       i: 1
       i_clamp: 1
-    white4_joint:
+    neck1_joint:
       p: 100
       d: 1
       i: 1
       i_clamp: 1
-    white5_joint:
+    neck2_joint:
       p: 100
       d: 1
       i: 1
@@ -114,36 +114,36 @@ black_arm_position_controller:
       d: 1
       i: 1
       i_clamp: 1
-torso_position_controller:
+white_arm_position_controller:
   type: position_controllers/JointPositionController
   joints:
-    - waist1_joint
-    - waist2_joint
-    - waist3_joint
-    - neck1_joint
-    - neck2_joint
+    - white1_joint
+    - white2_joint
+    - white3_joint
+    - white4_joint
+    - white5_joint
   gains:
-    waist1_joint:
+    white1_joint:
       p: 100
       d: 1
       i: 1
       i_clamp: 1
-    waist2_joint:
+    white2_joint:
       p: 100
       d: 1
       i: 1
       i_clamp: 1
-    waist3_joint:
+    white3_joint:
       p: 100
       d: 1
       i: 1
       i_clamp: 1
-    neck1_joint:
+    white4_joint:
       p: 100
       d: 1
       i: 1
       i_clamp: 1
-    neck2_joint:
+    white5_joint:
       p: 100
       d: 1
       i: 1
