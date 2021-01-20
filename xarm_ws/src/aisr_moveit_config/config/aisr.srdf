@@ -10,11 +10,19 @@
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
     <group name="white_arm">
+        <link name="White_Link1" />
+        <link name="White_Link2" />
+        <link name="White_Link3" />
+        <link name="White_Link4" />
+        <link name="White_Link5" />
+        <link name="Link111" />
         <joint name="white1_joint" />
         <joint name="white2_joint" />
         <joint name="white3_joint" />
         <joint name="white4_joint" />
         <joint name="white5_joint" />
+        <joint name="white_hand" />
+        <chain base_link="White_Link1" tip_link="Link111" />
     </group>
     <group name="black_arm">
         <joint name="black1_joint" />
@@ -34,6 +42,21 @@
         <joint name="neck1_joint" />
         <joint name="neck2_joint" />
     </group>
+    <group name="white_hand">
+        <joint name="white_hand" />
+        <joint name="Link1" />
+        <joint name="Link11" />
+        <joint name="Link2" />
+        <joint name="Link22" />
+        <joint name="Link3" />
+        <joint name="Link33" />
+        <joint name="Link4" />
+        <joint name="Link44" />
+        <joint name="Link5" />
+        <joint name="Link51" />
+        <joint name="Link52" />
+        <joint name="Link53" />
+    </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
     <group_state name="home_pose" group="white_arm">
         <joint name="white1_joint" value="0" />
@@ -42,12 +65,12 @@
         <joint name="white4_joint" value="0" />
         <joint name="white5_joint" value="0" />
     </group_state>
-    <group_state name="forward" group="white_arm">
-        <joint name="white1_joint" value="1.7127" />
-        <joint name="white2_joint" value="0" />
-        <joint name="white3_joint" value="0" />
-        <joint name="white4_joint" value="0" />
-        <joint name="white5_joint" value="0" />
+    <group_state name="intro" group="white_arm">
+        <joint name="white1_joint" value="0.7403" />
+        <joint name="white2_joint" value="0.4972" />
+        <joint name="white3_joint" value="0.837" />
+        <joint name="white4_joint" value="0.4641" />
+        <joint name="white5_joint" value="1.0028" />
     </group_state>
     <group_state name="home_pose" group="black_arm">
         <joint name="black1_joint" value="0" />
@@ -58,11 +81,11 @@
         <joint name="black6_joint" value="0" />
         <joint name="black7_joint" value="0" />
     </group_state>
-    <group_state name="forward" group="black_arm">
-        <joint name="black1_joint" value="-1.7238" />
-        <joint name="black2_joint" value="0" />
-        <joint name="black3_joint" value="0" />
-        <joint name="black4_joint" value="0" />
+    <group_state name="intro" group="black_arm">
+        <joint name="black1_joint" value="-0.6077" />
+        <joint name="black2_joint" value="0.4724" />
+        <joint name="black3_joint" value="-0.3398" />
+        <joint name="black4_joint" value="0.7845" />
         <joint name="black5_joint" value="0" />
         <joint name="black6_joint" value="0" />
         <joint name="black7_joint" value="0" />
@@ -77,10 +100,12 @@
     <group_state name="bend" group="torso">
         <joint name="neck1_joint" value="0" />
         <joint name="neck2_joint" value="0" />
-        <joint name="waist1_joint" value="-0.0608" />
+        <joint name="waist1_joint" value="0" />
         <joint name="waist2_joint" value="-0.5" />
         <joint name="waist3_joint" value="0" />
     </group_state>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="white_hand" parent_link="White_Link5" group="white_hand" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="dummy_link" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
@@ -89,6 +114,10 @@
     <disable_collisions link1="Black_Link1" link2="Black_Link5" reason="Never" />
     <disable_collisions link1="Black_Link1" link2="Black_Link6" reason="Never" />
     <disable_collisions link1="Black_Link1" link2="Black_Link7" reason="Never" />
+    <disable_collisions link1="Black_Link1" link2="Link111" reason="Never" />
+    <disable_collisions link1="Black_Link1" link2="Link4" reason="Never" />
+    <disable_collisions link1="Black_Link1" link2="Link5" reason="Never" />
+    <disable_collisions link1="Black_Link1" link2="Link51" reason="Never" />
     <disable_collisions link1="Black_Link1" link2="Neck_Link1" reason="Never" />
     <disable_collisions link1="Black_Link1" link2="Neck_Link2" reason="Never" />
     <disable_collisions link1="Black_Link1" link2="Waist_Link1" reason="Never" />
@@ -105,6 +134,10 @@
     <disable_collisions link1="Black_Link2" link2="Black_Link5" reason="Never" />
     <disable_collisions link1="Black_Link2" link2="Black_Link6" reason="Never" />
     <disable_collisions link1="Black_Link2" link2="Black_Link7" reason="Never" />
+    <disable_collisions link1="Black_Link2" link2="Link5" reason="Never" />
+    <disable_collisions link1="Black_Link2" link2="Link51" reason="Never" />
+    <disable_collisions link1="Black_Link2" link2="Link52" reason="Never" />
+    <disable_collisions link1="Black_Link2" link2="Link53" reason="Never" />
     <disable_collisions link1="Black_Link2" link2="Neck_Link1" reason="Never" />
     <disable_collisions link1="Black_Link2" link2="Neck_Link2" reason="Never" />
     <disable_collisions link1="Black_Link2" link2="Waist_Link1" reason="Never" />
@@ -120,6 +153,17 @@
     <disable_collisions link1="Black_Link4" link2="Black_Link5" reason="Adjacent" />
     <disable_collisions link1="Black_Link4" link2="Black_Link6" reason="Never" />
     <disable_collisions link1="Black_Link4" link2="Black_Link7" reason="Never" />
+    <disable_collisions link1="Black_Link4" link2="Link1" reason="Never" />
+    <disable_collisions link1="Black_Link4" link2="Link111" reason="Never" />
+    <disable_collisions link1="Black_Link4" link2="Link2" reason="Never" />
+    <disable_collisions link1="Black_Link4" link2="Link3" reason="Never" />
+    <disable_collisions link1="Black_Link4" link2="Link33" reason="Never" />
+    <disable_collisions link1="Black_Link4" link2="Link4" reason="Never" />
+    <disable_collisions link1="Black_Link4" link2="Link44" reason="Never" />
+    <disable_collisions link1="Black_Link4" link2="Link5" reason="Never" />
+    <disable_collisions link1="Black_Link4" link2="Link51" reason="Never" />
+    <disable_collisions link1="Black_Link4" link2="Link52" reason="Never" />
+    <disable_collisions link1="Black_Link4" link2="Link53" reason="Never" />
     <disable_collisions link1="Black_Link4" link2="Neck_Link1" reason="Never" />
     <disable_collisions link1="Black_Link4" link2="Neck_Link2" reason="Never" />
     <disable_collisions link1="Black_Link4" link2="Waist_Link1" reason="Never" />
@@ -130,31 +174,282 @@
     <disable_collisions link1="Black_Link4" link2="White_Link3" reason="Never" />
     <disable_collisions link1="Black_Link4" link2="White_Link4" reason="Never" />
     <disable_collisions link1="Black_Link4" link2="White_Link5" reason="Never" />
-    <disable_collisions link1="Black_Link4" link2="base_link" reason="Never" />
     <disable_collisions link1="Black_Link4" link2="black_Link3" reason="Adjacent" />
     <disable_collisions link1="Black_Link5" link2="Black_Link6" reason="Adjacent" />
     <disable_collisions link1="Black_Link5" link2="Black_Link7" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link1" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link11" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link111" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link2" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link22" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link3" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link33" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link4" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link44" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link5" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link51" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link52" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Link53" reason="Never" />
     <disable_collisions link1="Black_Link5" link2="Neck_Link1" reason="Never" />
     <disable_collisions link1="Black_Link5" link2="Neck_Link2" reason="Never" />
     <disable_collisions link1="Black_Link5" link2="Waist_Link1" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="Waist_Link2" reason="Never" />
     <disable_collisions link1="Black_Link5" link2="Waist_Link3" reason="Never" />
     <disable_collisions link1="Black_Link5" link2="White_Link1" reason="Never" />
     <disable_collisions link1="Black_Link5" link2="White_Link2" reason="Never" />
     <disable_collisions link1="Black_Link5" link2="White_Link3" reason="Never" />
     <disable_collisions link1="Black_Link5" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Black_Link5" link2="White_Link5" reason="Never" />
     <disable_collisions link1="Black_Link5" link2="black_Link3" reason="Never" />
     <disable_collisions link1="Black_Link6" link2="Black_Link7" reason="Adjacent" />
-    <disable_collisions link1="Black_Link6" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link1" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link11" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link111" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link2" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link22" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link3" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link33" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link4" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link44" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link5" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link51" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link52" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Link53" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="Neck_Link2" reason="Never" />
     <disable_collisions link1="Black_Link6" link2="White_Link1" reason="Never" />
     <disable_collisions link1="Black_Link6" link2="White_Link2" reason="Never" />
     <disable_collisions link1="Black_Link6" link2="White_Link3" reason="Never" />
     <disable_collisions link1="Black_Link6" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Black_Link6" link2="White_Link5" reason="Never" />
     <disable_collisions link1="Black_Link6" link2="black_Link3" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link11" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link111" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link2" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link22" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link3" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link33" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link4" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link44" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link5" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link51" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link52" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="Link53" reason="Never" />
     <disable_collisions link1="Black_Link7" link2="White_Link1" reason="Never" />
     <disable_collisions link1="Black_Link7" link2="White_Link2" reason="Never" />
     <disable_collisions link1="Black_Link7" link2="White_Link3" reason="Never" />
     <disable_collisions link1="Black_Link7" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Black_Link7" link2="White_Link5" reason="Never" />
     <disable_collisions link1="Black_Link7" link2="black_Link3" reason="Never" />
+    <disable_collisions link1="Link1" link2="Link11" reason="Adjacent" />
+    <disable_collisions link1="Link1" link2="Link111" reason="Adjacent" />
+    <disable_collisions link1="Link1" link2="Link2" reason="Never" />
+    <disable_collisions link1="Link1" link2="Link22" reason="Never" />
+    <disable_collisions link1="Link1" link2="Link3" reason="Never" />
+    <disable_collisions link1="Link1" link2="Link33" reason="Never" />
+    <disable_collisions link1="Link1" link2="Link4" reason="Never" />
+    <disable_collisions link1="Link1" link2="Link44" reason="Never" />
+    <disable_collisions link1="Link1" link2="Link5" reason="Never" />
+    <disable_collisions link1="Link1" link2="Link51" reason="Never" />
+    <disable_collisions link1="Link1" link2="Link52" reason="Never" />
+    <disable_collisions link1="Link1" link2="Link53" reason="Never" />
+    <disable_collisions link1="Link1" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Link1" link2="Neck_Link2" reason="Never" />
+    <disable_collisions link1="Link1" link2="Waist_Link1" reason="Never" />
+    <disable_collisions link1="Link1" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link1" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link1" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link1" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link1" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link1" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link1" link2="base_link" reason="Never" />
+    <disable_collisions link1="Link1" link2="black_Link3" reason="Never" />
+    <disable_collisions link1="Link11" link2="Link111" reason="Never" />
+    <disable_collisions link1="Link11" link2="Link2" reason="Never" />
+    <disable_collisions link1="Link11" link2="Link22" reason="Never" />
+    <disable_collisions link1="Link11" link2="Link3" reason="Never" />
+    <disable_collisions link1="Link11" link2="Link33" reason="Never" />
+    <disable_collisions link1="Link11" link2="Link4" reason="Never" />
+    <disable_collisions link1="Link11" link2="Link44" reason="Never" />
+    <disable_collisions link1="Link11" link2="Link5" reason="Never" />
+    <disable_collisions link1="Link11" link2="Link51" reason="Never" />
+    <disable_collisions link1="Link11" link2="Link52" reason="Never" />
+    <disable_collisions link1="Link11" link2="Link53" reason="Never" />
+    <disable_collisions link1="Link11" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Link11" link2="Neck_Link2" reason="Never" />
+    <disable_collisions link1="Link11" link2="Waist_Link1" reason="Never" />
+    <disable_collisions link1="Link11" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link11" link2="Waist_Link3" reason="Never" />
+    <disable_collisions link1="Link11" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link11" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link11" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link11" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link11" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link11" link2="base_link" reason="Never" />
+    <disable_collisions link1="Link111" link2="Link2" reason="Adjacent" />
+    <disable_collisions link1="Link111" link2="Link22" reason="Never" />
+    <disable_collisions link1="Link111" link2="Link3" reason="Adjacent" />
+    <disable_collisions link1="Link111" link2="Link33" reason="Never" />
+    <disable_collisions link1="Link111" link2="Link4" reason="Adjacent" />
+    <disable_collisions link1="Link111" link2="Link44" reason="Never" />
+    <disable_collisions link1="Link111" link2="Link5" reason="Adjacent" />
+    <disable_collisions link1="Link111" link2="Link51" reason="Never" />
+    <disable_collisions link1="Link111" link2="Link52" reason="Never" />
+    <disable_collisions link1="Link111" link2="Link53" reason="Never" />
+    <disable_collisions link1="Link111" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link111" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link111" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link111" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link111" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link111" link2="White_Link5" reason="Adjacent" />
+    <disable_collisions link1="Link2" link2="Link22" reason="Adjacent" />
+    <disable_collisions link1="Link2" link2="Link3" reason="Never" />
+    <disable_collisions link1="Link2" link2="Link33" reason="Never" />
+    <disable_collisions link1="Link2" link2="Link4" reason="Never" />
+    <disable_collisions link1="Link2" link2="Link44" reason="Never" />
+    <disable_collisions link1="Link2" link2="Link5" reason="Never" />
+    <disable_collisions link1="Link2" link2="Link51" reason="Never" />
+    <disable_collisions link1="Link2" link2="Link52" reason="Never" />
+    <disable_collisions link1="Link2" link2="Link53" reason="Never" />
+    <disable_collisions link1="Link2" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Link2" link2="Neck_Link2" reason="Never" />
+    <disable_collisions link1="Link2" link2="Waist_Link1" reason="Never" />
+    <disable_collisions link1="Link2" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link2" link2="Waist_Link3" reason="Never" />
+    <disable_collisions link1="Link2" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link2" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link2" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link2" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link2" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link2" link2="base_link" reason="Never" />
+    <disable_collisions link1="Link2" link2="black_Link3" reason="Never" />
+    <disable_collisions link1="Link22" link2="Link3" reason="Never" />
+    <disable_collisions link1="Link22" link2="Link33" reason="Never" />
+    <disable_collisions link1="Link22" link2="Link4" reason="Never" />
+    <disable_collisions link1="Link22" link2="Link44" reason="Never" />
+    <disable_collisions link1="Link22" link2="Link5" reason="Never" />
+    <disable_collisions link1="Link22" link2="Link51" reason="Never" />
+    <disable_collisions link1="Link22" link2="Link52" reason="Never" />
+    <disable_collisions link1="Link22" link2="Link53" reason="Never" />
+    <disable_collisions link1="Link22" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Link22" link2="Neck_Link2" reason="Never" />
+    <disable_collisions link1="Link22" link2="Waist_Link1" reason="Never" />
+    <disable_collisions link1="Link22" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link22" link2="Waist_Link3" reason="Never" />
+    <disable_collisions link1="Link22" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link22" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link22" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link22" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link22" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link22" link2="base_link" reason="Never" />
+    <disable_collisions link1="Link3" link2="Link33" reason="Adjacent" />
+    <disable_collisions link1="Link3" link2="Link4" reason="Never" />
+    <disable_collisions link1="Link3" link2="Link44" reason="Never" />
+    <disable_collisions link1="Link3" link2="Link5" reason="Never" />
+    <disable_collisions link1="Link3" link2="Link51" reason="Never" />
+    <disable_collisions link1="Link3" link2="Link52" reason="Never" />
+    <disable_collisions link1="Link3" link2="Link53" reason="Never" />
+    <disable_collisions link1="Link3" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Link3" link2="Neck_Link2" reason="Never" />
+    <disable_collisions link1="Link3" link2="Waist_Link1" reason="Never" />
+    <disable_collisions link1="Link3" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link3" link2="Waist_Link3" reason="Never" />
+    <disable_collisions link1="Link3" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link3" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link3" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link3" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link3" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link3" link2="base_link" reason="Never" />
+    <disable_collisions link1="Link33" link2="Link4" reason="Never" />
+    <disable_collisions link1="Link33" link2="Link44" reason="Never" />
+    <disable_collisions link1="Link33" link2="Link5" reason="Never" />
+    <disable_collisions link1="Link33" link2="Link51" reason="Never" />
+    <disable_collisions link1="Link33" link2="Link52" reason="Never" />
+    <disable_collisions link1="Link33" link2="Link53" reason="Never" />
+    <disable_collisions link1="Link33" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Link33" link2="Neck_Link2" reason="Never" />
+    <disable_collisions link1="Link33" link2="Waist_Link1" reason="Never" />
+    <disable_collisions link1="Link33" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link33" link2="Waist_Link3" reason="Never" />
+    <disable_collisions link1="Link33" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link33" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link33" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link33" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link33" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link33" link2="base_link" reason="Never" />
+    <disable_collisions link1="Link4" link2="Link44" reason="Adjacent" />
+    <disable_collisions link1="Link4" link2="Link5" reason="Never" />
+    <disable_collisions link1="Link4" link2="Link51" reason="Never" />
+    <disable_collisions link1="Link4" link2="Link52" reason="Never" />
+    <disable_collisions link1="Link4" link2="Link53" reason="Never" />
+    <disable_collisions link1="Link4" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Link4" link2="Neck_Link2" reason="Never" />
+    <disable_collisions link1="Link4" link2="Waist_Link1" reason="Never" />
+    <disable_collisions link1="Link4" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link4" link2="Waist_Link3" reason="Never" />
+    <disable_collisions link1="Link4" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link4" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link4" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link4" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link4" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link4" link2="base_link" reason="Never" />
+    <disable_collisions link1="Link44" link2="Link5" reason="Never" />
+    <disable_collisions link1="Link44" link2="Link51" reason="Never" />
+    <disable_collisions link1="Link44" link2="Link52" reason="Never" />
+    <disable_collisions link1="Link44" link2="Link53" reason="Never" />
+    <disable_collisions link1="Link44" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Link44" link2="Neck_Link2" reason="Never" />
+    <disable_collisions link1="Link44" link2="Waist_Link1" reason="Never" />
+    <disable_collisions link1="Link44" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link44" link2="Waist_Link3" reason="Never" />
+    <disable_collisions link1="Link44" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link44" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link44" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link44" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link44" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link44" link2="base_link" reason="Never" />
+    <disable_collisions link1="Link5" link2="Link51" reason="Adjacent" />
+    <disable_collisions link1="Link5" link2="Link52" reason="Never" />
+    <disable_collisions link1="Link5" link2="Link53" reason="Never" />
+    <disable_collisions link1="Link5" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Link5" link2="Neck_Link2" reason="Never" />
+    <disable_collisions link1="Link5" link2="Waist_Link1" reason="Never" />
+    <disable_collisions link1="Link5" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link5" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link5" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link5" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link5" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link5" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link5" link2="base_link" reason="Never" />
+    <disable_collisions link1="Link5" link2="black_Link3" reason="Never" />
+    <disable_collisions link1="Link51" link2="Link52" reason="Adjacent" />
+    <disable_collisions link1="Link51" link2="Link53" reason="Never" />
+    <disable_collisions link1="Link51" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link51" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link51" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link51" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link51" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link51" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link51" link2="black_Link3" reason="Never" />
+    <disable_collisions link1="Link52" link2="Link53" reason="Adjacent" />
+    <disable_collisions link1="Link52" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Link52" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link52" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link52" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link52" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link52" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link52" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link52" link2="base_link" reason="Never" />
+    <disable_collisions link1="Link52" link2="black_Link3" reason="Never" />
+    <disable_collisions link1="Link53" link2="Neck_Link1" reason="Never" />
+    <disable_collisions link1="Link53" link2="Neck_Link2" reason="Never" />
+    <disable_collisions link1="Link53" link2="Waist_Link2" reason="Never" />
+    <disable_collisions link1="Link53" link2="White_Link1" reason="Never" />
+    <disable_collisions link1="Link53" link2="White_Link2" reason="Never" />
+    <disable_collisions link1="Link53" link2="White_Link3" reason="Never" />
+    <disable_collisions link1="Link53" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Link53" link2="White_Link5" reason="Never" />
+    <disable_collisions link1="Link53" link2="base_link" reason="Never" />
+    <disable_collisions link1="Link53" link2="black_Link3" reason="Never" />
     <disable_collisions link1="Neck_Link1" link2="Neck_Link2" reason="Adjacent" />
     <disable_collisions link1="Neck_Link1" link2="Waist_Link1" reason="Never" />
     <disable_collisions link1="Neck_Link1" link2="Waist_Link2" reason="Never" />
@@ -172,7 +467,6 @@
     <disable_collisions link1="Neck_Link2" link2="White_Link2" reason="Never" />
     <disable_collisions link1="Neck_Link2" link2="White_Link3" reason="Never" />
     <disable_collisions link1="Neck_Link2" link2="White_Link4" reason="Never" />
-    <disable_collisions link1="Neck_Link2" link2="White_Link5" reason="Never" />
     <disable_collisions link1="Neck_Link2" link2="base_link" reason="Never" />
     <disable_collisions link1="Neck_Link2" link2="black_Link3" reason="Never" />
     <disable_collisions link1="Waist_Link1" link2="Waist_Link2" reason="Adjacent" />
@@ -188,6 +482,7 @@
     <disable_collisions link1="Waist_Link2" link2="White_Link2" reason="Never" />
     <disable_collisions link1="Waist_Link2" link2="White_Link3" reason="Never" />
     <disable_collisions link1="Waist_Link2" link2="White_Link4" reason="Never" />
+    <disable_collisions link1="Waist_Link2" link2="White_Link5" reason="Never" />
     <disable_collisions link1="Waist_Link2" link2="base_link" reason="Never" />
     <disable_collisions link1="Waist_Link2" link2="black_Link3" reason="Never" />
     <disable_collisions link1="Waist_Link3" link2="White_Link1" reason="Adjacent" />

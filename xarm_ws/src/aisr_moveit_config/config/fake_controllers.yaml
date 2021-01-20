@@ -22,6 +22,9 @@ controller_list:
       - waist3_joint
       - neck1_joint
       - neck2_joint
+  - name: fake_white_hand_controller
+    joints:
+      []
 initial:  # Define initial robot poses.
   - group: white_arm
     pose: home_pose

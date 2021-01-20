@@ -6,6 +6,6 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/aisr.srdf
   CONFIG:
-    author_name: Xiaowei(Caesar) LIn
+    author_name: Xiaowei(Caesar) Lin
     author_email: xiaowei.lin1997@gmail.com
-    generated_timestamp: 1611038636
+    generated_timestamp: 1611041558
