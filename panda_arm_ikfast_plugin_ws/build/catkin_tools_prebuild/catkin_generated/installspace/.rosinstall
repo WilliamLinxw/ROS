@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/caesar/Desktop/ROS/panda_arm_ikfast_plugin_ws/install/setup.sh

@@ -1,0 +1,8 @@
+prefix=/home/caesar/Desktop/ROS/panda_arm_ikfast_plugin_ws/devel/.private/catkin_tools_prebuild
+
+Name: catkin_tools_prebuild
+Description: Description of catkin_tools_prebuild
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
