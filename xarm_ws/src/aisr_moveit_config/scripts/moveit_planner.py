@@ -1,11 +1,9 @@
 #!/usr/bin/env python
-
+# -*- coding: utf-8 -*-
 import rospy
 from std_msgs.msg import String
-from xarm.wrapper import XArmAPI
 from sensor_msgs.msg import JointState
 import json
-from xarm.wrapper import XArmAPI
 import numpy as np
 import  time
 import sys
@@ -163,14 +161,14 @@ class Arm(object):
 
         # Go to a desired position with the center of the circle is
         pose_goal = geometry_msgs.msg.Pose()
-        pose_goal.orientation.x = 1
-        pose_goal.orientation.y = 0
-        pose_goal.orientation.z = 0
-        pose_goal.orientation.w = 0
+        pose_goal.orientation.x = -0.00377614
+        pose_goal.orientation.y = -0.795539
+        pose_goal.orientation.z = 0.321028
+        pose_goal.orientation.w = 0.513853
 
-        pose_goal.position.x = 0.5
-        pose_goal.position.y = 0
-        pose_goal.position.z = -0.012
+        pose_goal.position.x = 0.310497
+        pose_goal.position.y = -0.258007
+        pose_goal.position.z = 0.8116760
 
         xarm7.set_pose_target(pose_goal)
         
@@ -228,57 +226,13 @@ class Arm(object):
 # circle_xyz=draw_cirlce(0.05,start_pos,72)
 
 
-def callback(data):
-    joint_position = data.position
-    angles = [joint_position[5]*180/3.14159, joint_position[6]*180/3.14159, joint_position[7]*180/3.14159, joint_position[8]*180/3.14159, joint_position[9]*180/3.14159,54.5, -26]
-    angles_ = model_values_to_real_values(angles)
-    # angles_ = [-168, 68, 114, 58, 179, 54.5, -26]
-    print(angles_)
-    if arm.connected and arm.state != 4:
-        #def set_servo_angle_j(self, angles, speed=None, mvacc=None, mvtime=None, is_radian=None, **kwargs):
-       ret = arm.set_servo_angle(angles_, is_radian = False,radius = 60, speed = 10)    
-       time.sleep(0.1)
 
-
-
-
-def real_values_to_model_values(real_values = [-2.8344,1.4573,1.9897,1.0123,3.3859]):
-    '''将xarm的实际角度转为模型上的角度, 减去一个初始差值 '''
-    model_values = real_values
-    model_values[0] -= real_zero_values[0]
-    model_values[1] -= real_zero_values[1]
-    model_values[1] *=-1  #注意第二个joint与模型转动方向相反
-    model_values[2] -= real_zero_values[2]
-    model_values[3] -= real_zero_values[3]
-    model_values[4] -= real_zero_values[4]
-    return model_values
-
-def model_values_to_real_values(model_values = [0,0,0,0,0]):
-    ''' 将模型上的角度转为xarm上的角度 加上一个初始差值 '''
-    real_values = model_values
-    real_values[0] += real_zero_values[0]
-    real_values[1] *= -1
-    real_values[1] += real_zero_values[1]
-    real_values[2] += real_zero_values[2]
-    real_values[3] += real_zero_values[3]
-    real_values[4] += real_zero_values[4]
-    return real_values
 
 
 if __name__ == '__main__':
 
-    ip = '192.168.1.217'
-    arm = XArmAPI(ip)
-    arm.motion_enable(enable=True)
-
-    arm.set_mode(1)
-    arm.set_state(0)
-    time.sleep(0.1)
-
-    rospy.init_node('listener', anonymous=True)
-    rospy.Subscriber('/joint_states', JointState, callback)
-    rospy.spin()
-
+    arm = Arm()
+    arm.move_circle()
 
     # arm = Arm()
     # print "============ Press `Enter` to execute a movement function ============"
