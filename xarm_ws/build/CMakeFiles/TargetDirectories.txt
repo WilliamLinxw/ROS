@@ -184,6 +184,13 @@
 /home/caesar/Desktop/ROS/xarm_ws/build/aisr/CMakeFiles/install/local.dir
 /home/caesar/Desktop/ROS/xarm_ws/build/aisr/CMakeFiles/rebuild_cache.dir
 /home/caesar/Desktop/ROS/xarm_ws/build/aisr/CMakeFiles/install.dir
+/home/caesar/Desktop/ROS/xarm_ws/build/aisr_moveit_config/CMakeFiles/install/strip.dir
+/home/caesar/Desktop/ROS/xarm_ws/build/aisr_moveit_config/CMakeFiles/edit_cache.dir
+/home/caesar/Desktop/ROS/xarm_ws/build/aisr_moveit_config/CMakeFiles/list_install_components.dir
+/home/caesar/Desktop/ROS/xarm_ws/build/aisr_moveit_config/CMakeFiles/test.dir
+/home/caesar/Desktop/ROS/xarm_ws/build/aisr_moveit_config/CMakeFiles/install/local.dir
+/home/caesar/Desktop/ROS/xarm_ws/build/aisr_moveit_config/CMakeFiles/rebuild_cache.dir
+/home/caesar/Desktop/ROS/xarm_ws/build/aisr_moveit_config/CMakeFiles/install.dir
 /home/caesar/Desktop/ROS/xarm_ws/build/examples/xarm7_redundancy_res/CMakeFiles/install/strip.dir
 /home/caesar/Desktop/ROS/xarm_ws/build/examples/xarm7_redundancy_res/CMakeFiles/edit_cache.dir
 /home/caesar/Desktop/ROS/xarm_ws/build/examples/xarm7_redundancy_res/CMakeFiles/list_install_components.dir

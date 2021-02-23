@@ -1,8 +1,0 @@
-prefix=/home/caesar/Desktop/ROS/xarm_ws/devel
-
-Name: xarm7_circle
-Description: Description of xarm7_circle
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

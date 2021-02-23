@@ -1,0 +1,8 @@
+prefix=/home/caesar/Desktop/ROS/xarm_ws/devel
+
+Name: aisr_moveit_config
+Description: Description of aisr_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

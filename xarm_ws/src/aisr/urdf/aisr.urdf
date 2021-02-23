@@ -53,23 +53,23 @@
     <material>Gazebo/Gray</material>
     <turnGravityOff>true</turnGravityOff>
   </gazebo>
-  <gazebo reference="White_Link1">
+  <gazebo reference="link1">
     <material>Gazebo/White</material>
     <turnGravityOff>true</turnGravityOff>
   </gazebo>
-  <gazebo reference="White_Link2">
+  <gazebo reference="link2">
     <material>Gazebo/White</material>
     <turnGravityOff>true</turnGravityOff>
   </gazebo>
-  <gazebo reference="White_Link3">
+  <gazebo reference="link3">
     <material>Gazebo/White</material>
     <turnGravityOff>true</turnGravityOff>
   </gazebo>
-  <gazebo reference="White_Link4">
+  <gazebo reference="link4">
     <material>Gazebo/White</material>
     <turnGravityOff>true</turnGravityOff>
   </gazebo>
-  <gazebo reference="White_Link5">
+  <gazebo reference="link5">
     <material>Gazebo/White</material>
     <turnGravityOff>true</turnGravityOff>
   </gazebo>
@@ -127,27 +127,27 @@
     <stopKp value="1000000.0"/>
     <fudgeFactor value="0.5"/>
   </gazebo>
-  <gazebo reference="white1_joint">
+  <gazebo reference="joint1">
     <stopKd value="1.0"/>
     <stopKp value="1000000.0"/>
     <fudgeFactor value="0.5"/>
   </gazebo>
-  <gazebo reference="white2_joint">
+  <gazebo reference="joint2">
     <stopKd value="1.0"/>
     <stopKp value="1000000.0"/>
     <fudgeFactor value="0.5"/>
   </gazebo>
-  <gazebo reference="white3_joint">
+  <gazebo reference="joint3">
     <stopKd value="1.0"/>
     <stopKp value="1000000.0"/>
     <fudgeFactor value="0.5"/>
   </gazebo>
-  <gazebo reference="white4_joint">
+  <gazebo reference="joint4">
     <stopKd value="1.0"/>
     <stopKp value="1000000.0"/>
     <fudgeFactor value="0.5"/>
   </gazebo>
-  <gazebo reference="white5_joint">
+  <gazebo reference="joint5">
     <stopKd value="1.0"/>
     <stopKp value="1000000.0"/>
     <fudgeFactor value="0.5"/>
@@ -535,7 +535,7 @@
     <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
-    name="White_Link1">
+    name="link1">
     <inertial>
       <origin
         xyz="8.15757511540838E-09 -0.0245869731336436 0.0533811368110015"
@@ -575,7 +575,7 @@
     </collision>
   </link>
   <joint
-    name="white1_joint"
+    name="joint1"
     type="revolute">
     <origin
       xyz="0.20962 -0.16689 -0.0002"
@@ -583,7 +583,7 @@
     <parent
       link="Waist_Link3" />
     <child
-      link="White_Link1" />
+      link="link1" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -594,7 +594,7 @@
     <dynamics damping="30.0" friction="0.3"/>
   </joint>
   <link
-    name="White_Link2">
+    name="link2">
     <inertial>
       <origin
         xyz="-9.43690240839956E-07 -0.0442794702919594 0.0227213080807953"
@@ -634,15 +634,15 @@
     </collision>
   </link>
   <joint
-    name="white2_joint"
+    name="joint2"
     type="revolute">
     <origin
       xyz="0 0 0.055"
-      rpy="1.5708 -1.309 0" />
+      rpy="1.5708 -1.5708 0" />
     <parent
-      link="White_Link1" />
+      link="link1" />
     <child
-      link="White_Link2" />
+      link="link2" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -653,7 +653,7 @@
     <dynamics damping="10.0" friction="0.3"/>
   </joint>
   <link
-    name="White_Link3">
+    name="link3">
     <inertial>
       <origin
         xyz="0.0112747095496421 -4.73265843155667E-05 -0.106181058373573"
@@ -693,15 +693,15 @@
     </collision>
   </link>
   <joint
-    name="white3_joint"
+    name="joint3"
     type="revolute">
     <origin
       xyz="0 -0.08 0.0045"
       rpy="-1.5708 0 0" />
     <parent
-      link="White_Link2" />
+      link="link2" />
     <child
-      link="White_Link3" />
+      link="link3" />
     <axis
       xyz="0 0 -1" />
     <limit
@@ -712,7 +712,7 @@
     <dynamics damping="10.0" friction="0.3"/>
   </joint>
   <link
-    name="White_Link4">
+    name="link4">
     <inertial>
       <origin
         xyz="-1.3684747878287E-08 -0.0294615833207014 0.0215098902148837"
@@ -752,15 +752,15 @@
     </collision>
   </link>
   <joint
-    name="white4_joint"
+    name="joint4"
     type="revolute">
     <origin
       xyz="0 0 -0.163"
       rpy="1.5708 0 1.5708" />
     <parent
-      link="White_Link3" />
+      link="link3" />
     <child
-      link="White_Link4" />
+      link="link4" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -771,7 +771,7 @@
     <dynamics damping="5.0" friction="0.3"/>
   </joint>
   <link
-    name="White_Link5">
+    name="link5">
     <inertial>
       <origin
         xyz="-0.00163670637198321 -0.000337299650007622 -0.0925748094538163"
@@ -811,15 +811,15 @@
     </collision>
   </link>
   <joint
-    name="white5_joint"
+    name="joint5"
     type="revolute">
     <origin
       xyz="0 -0.06 0"
       rpy="-1.5708 -1.5708 0" />
     <parent
-      link="White_Link4" />
+      link="link4" />
     <child
-      link="White_Link5" />
+      link="link5" />
     <axis
       xyz="0 0 -1" />
     <limit
@@ -829,13 +829,52 @@
       velocity="1.0" />
     <dynamics damping="5.0" friction="0.3"/>
   </joint>
+  
+  <link name="link6" />
+  <joint
+    name="joint6"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+  </joint>
+  
+  <link name="link7" />
+  <joint
+    name="joint7"
+    type="fixed">
+    <origin
+      xyz="0 0 -0.23"
+      rpy="0 0 0" />
+    <parent
+      link="link6" />
+    <child
+      link="link7" />
+  </joint>
+  
+  <link name="link_eef" />
+  <joint
+    name="joint_eef"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link7" />
+    <child
+      link="link_eef" />
+  </joint>
 
   <!-- Hand -->
   <joint name="white_hand" type="revolute">
-    <parent link="White_Link5"/>
+    <parent link="link_eef"/>
     <child link="Link111"/>
     <!-- <origin rpy="-1.5707963267948966 1.57 0" xyz="0.01 -0.018 0.05"/> -->
-    <origin rpy="-1.57 1.57 3.14" xyz="0 0 -0.275"/>
+    <origin rpy="-1.57 1.57 3.14" xyz="0 0 -0.045"/>
     <axis xyz="-1 0 0" />
     <limit
       lower="-3.14"
@@ -2053,7 +2092,7 @@
 
   <transmission name="white1_trans"> 
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="white1_joint">
+    <joint name="joint1">
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="white1_motor">
@@ -2064,7 +2103,7 @@
 
   <transmission name="white2_trans"> 
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="white2_joint">
+    <joint name="joint2">
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="white2_motor">
@@ -2075,7 +2114,7 @@
 
   <transmission name="white3_trans"> 
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="white3_joint">
+    <joint name="joint3">
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="white3_motor">
@@ -2086,7 +2125,7 @@
 
   <transmission name="white4_trans"> 
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="white4_joint">
+    <joint name="joint4">
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="white4_motor">
@@ -2097,7 +2136,7 @@
 
   <transmission name="white5_trans"> 
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="white5_joint">
+    <joint name="joint5">
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="white5_motor">

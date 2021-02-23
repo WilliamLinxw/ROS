@@ -1,8 +1,0 @@
-prefix=/home/caesar/Desktop/ROS/xarm_ws/devel
-
-Name: AISR
-Description: Description of AISR
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

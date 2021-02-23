@@ -14,18 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Value Computed by CMake
-AISR-urdf_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/build/AISR-urdf.SLDASM
-
-//Value Computed by CMake
-AISR-urdf_SOURCE_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/src/AISR-urdf.SLDASM
-
-//Value Computed by CMake
-AISR_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/build/AISR-urdf.SLDASM
-
-//Value Computed by CMake
-AISR_SOURCE_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/src/AISR-urdf.SLDASM
-
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON
 
@@ -222,7 +210,10 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Path to a program.
-DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+DOXYGEN_EXECUTABLE:FILEPATH=/usr/bin/doxygen
+
+//Doxygen found
+DOXYGEN_FOUND:BOOL=TRUE
 
 //Path to a program.
 EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
@@ -309,16 +300,10 @@ aisr_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/build/aisr
 aisr_SOURCE_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/src/aisr
 
 //Value Computed by CMake
-aisr_config_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/build/aisr_config
+aisr_moveit_config_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/build/aisr_moveit_config
 
 //Value Computed by CMake
-aisr_config_SOURCE_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/src/aisr_config
-
-//Value Computed by CMake
-aisr_description_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/build/aisr_description
-
-//Value Computed by CMake
-aisr_description_SOURCE_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/src/aisr_description
+aisr_moveit_config_SOURCE_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/src/aisr_moveit_config
 
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
@@ -637,12 +622,6 @@ xarm6_vacuum_gripper_moveit_config_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xa
 xarm6_vacuum_gripper_moveit_config_SOURCE_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/src/examples/xarm6_vacuum_gripper_moveit_config
 
 //Value Computed by CMake
-xarm7_circle_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/build/xarm7_circle
-
-//Value Computed by CMake
-xarm7_circle_SOURCE_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/src/xarm7_circle
-
-//Value Computed by CMake
 xarm7_gripper_moveit_config_BINARY_DIR:STATIC=/home/caesar/Desktop/ROS/xarm_ws/build/xarm7_gripper_moveit_config
 
 //Value Computed by CMake
@@ -851,7 +830,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

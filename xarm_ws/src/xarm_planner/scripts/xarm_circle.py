@@ -44,7 +44,7 @@ class Arm(object):
         print robot.get_current_state()
 
         # Set the reference frame of the end effector
-        reference_frame = "world"
+        reference_frame = "dummy_link"
         move_group.set_pose_reference_frame(reference_frame)
 
         # Allow replanning
@@ -64,7 +64,7 @@ class Arm(object):
         xarm7 = self.move_group
 
         # Go back to the home position
-        xarm7.set_named_target('home_pose')
+        xarm7.set_named_target('home')
         xarm7.go(wait=True)
         rospy.sleep(1)
 

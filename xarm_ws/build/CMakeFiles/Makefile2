@@ -2021,6 +2021,24 @@ aisr/preinstall:
 .PHONY : aisr/preinstall
 
 #=============================================================================
+# Directory level rules for directory aisr_moveit_config
+
+# Convenience name for "all" pass in the directory.
+aisr_moveit_config/all:
+
+.PHONY : aisr_moveit_config/all
+
+# Convenience name for "clean" pass in the directory.
+aisr_moveit_config/clean:
+
+.PHONY : aisr_moveit_config/clean
+
+# Convenience name for "preinstall" pass in the directory.
+aisr_moveit_config/preinstall:
+
+.PHONY : aisr_moveit_config/preinstall
+
+#=============================================================================
 # Directory level rules for directory examples/xarm7_redundancy_res
 
 # Convenience name for "all" pass in the directory.

@@ -148,7 +148,12 @@ namespace xarm_control
 
 			position_cmd_float_[k] = (float)position_cmd_[k];
 		}
-
+		position_cmd_float_[0] -= -162.4/180*3.1415926;
+		position_cmd_float_[1] -= 83.5/180*3.1415926;
+		position_cmd_float_[1] *= -1;
+		position_cmd_float_[2] -= 114/180*3.1415926;
+		position_cmd_float_[3] -= 58/180*3.1415926;
+		position_cmd_float_[4] -= 194/180*3.1415926;
 		xarm.setServoJ(position_cmd_float_);
 
 		initial_write_ = false;

@@ -1,8 +1,0 @@
-prefix=/home/caesar/Desktop/ROS/xarm_ws/install
-
-Name: aisr_config
-Description: Description of aisr_config
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
