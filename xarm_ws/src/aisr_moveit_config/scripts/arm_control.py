@@ -73,9 +73,9 @@ def callback(data):
     print(angles_)
     if arm.connected and arm.state != 4:
         #def set_servo_angle_j(self, angles, speed=None, mvacc=None, mvtime=None, is_radian=None, **kwargs):
-       ret = arm.set_servo_angle(angle=angles_, is_radian = False,radius = 60, speed = 10)
+       ret = arm.set_servo_angle(angle=angles_, is_radian = False, radius = 40, speed = 50)
        print('moved')  
-       time.sleep(0.1)
+    #    time.sleep(0.1)
 
 
 

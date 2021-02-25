@@ -72,6 +72,7 @@ class Arm(object):
 
     def move_circle_with_cartesian(self):
         xarm7 = self.move_group
+        eef_link = self.eef_link
 
         # Go back to the home position
         # xarm7.set_named_target('home')
@@ -79,21 +80,31 @@ class Arm(object):
         # rospy.sleep(1)
 
         # Go to a desired position with the center of the circle is
-        pose_goal = geometry_msgs.msg.Pose()
-        pose_goal.orientation.x = 1
-        pose_goal.orientation.y = 0
-        pose_goal.orientation.z = 0
-        pose_goal.orientation.w = 0
+        # pose_goal = geometry_msgs.msg.Pose()
+        # pose_goal.orientation.x = 1
+        # pose_goal.orientation.y = 0
+        # pose_goal.orientation.z = 0
+        # pose_goal.orientation.w = 0
 
-        pose_goal.position.x = 0.5
-        pose_goal.position.y = 0
-        pose_goal.position.z = -0.012
+        # pose_goal.position.x = 0.5
+        # pose_goal.position.y = 0
+        # pose_goal.position.z = -0.012
 
-        xarm7.set_pose_target(pose_goal)
+        # xarm7.set_pose_target(pose_goal)
         
+        # xarm7.go(wait=True)
+        # xarm7.stop()
+        # xarm7.clear_pose_targets()
+
+        xyz = [0.3, -0.35, 0.45]
+        print('position tolerance: ', xarm7.get_goal_position_tolerance())
+        xarm7.set_goal_position_tolerance(0.001)
+        print('position tolerance: ', xarm7.get_goal_position_tolerance())
+        xarm7.set_position_target(xyz, end_effector_link = eef_link)
+        print('set position target')
+        xarm7.plan()
         xarm7.go(wait=True)
-        xarm7.stop()
-        xarm7.clear_pose_targets()
+        print('moved')
 
         # Get the center of the circle
         current_pose = xarm7.get_current_pose().pose
@@ -170,7 +181,7 @@ class Arm(object):
         pose_goal.position.z = 0.45
 
         q = [-0.00377614, -0.795539, 0.321028, 0.513853]
-        xyz = [0.3, -0.35, 0.45]
+        
 
         # xarm7.set_orientation_target(q)
         # print('set orientation target')
@@ -178,6 +189,7 @@ class Arm(object):
         # xarm7.go()
         # print('moved')
 
+        xyz = [0.3, -0.35, 0.45]
         print('position tolerance: ', xarm7.get_goal_position_tolerance())
         xarm7.set_goal_position_tolerance(0.001)
         print('position tolerance: ', xarm7.get_goal_position_tolerance())
@@ -256,7 +268,7 @@ class Arm(object):
 if __name__ == '__main__':
 
     arm = Arm()
-    arm.move_circle()
+    arm.move_circle_with_cartesian()
 
     # arm = Arm()
     # print "============ Press `Enter` to execute a movement function ============"
