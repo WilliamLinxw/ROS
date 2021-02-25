@@ -848,7 +848,7 @@
     name="joint7"
     type="fixed">
     <origin
-      xyz="0 0 -0.23"
+      xyz="0 -0.12000024 -0.325247"
       rpy="0 0 0" />
     <parent
       link="link6" />
@@ -861,7 +861,7 @@
     name="joint_eef"
     type="fixed">
     <origin
-      xyz="0 0 0"
+      xyz="0 0.12000024 0.095247"
       rpy="0 0 0" />
     <parent
       link="link7" />
@@ -924,6 +924,7 @@
       </geometry>
     </collision>
   </link>
+
   <link
     name="Link1">
     <inertial>

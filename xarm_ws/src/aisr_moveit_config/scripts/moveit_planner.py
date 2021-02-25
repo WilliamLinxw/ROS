@@ -153,61 +153,85 @@ class Arm(object):
 
     def move_circle(self):
         xarm7 = self.move_group
-
+        eef_link = self.eef_link
         # Go back to the home position
         # xarm7.set_named_target('home')
         # xarm7.go(wait=True)
         # rospy.sleep(1)
 
-        # Go to a desired position with the center of the circle is
+        # Go to a desired position where the center of the circle is
         pose_goal = geometry_msgs.msg.Pose()
         pose_goal.orientation.x = -0.00377614
         pose_goal.orientation.y = -0.795539
         pose_goal.orientation.z = 0.321028
         pose_goal.orientation.w = 0.513853
+        pose_goal.position.x = 0.3
+        pose_goal.position.y = -0.4
+        pose_goal.position.z = 0.45
 
-        pose_goal.position.x = 0.310497
-        pose_goal.position.y = -0.258007
-        pose_goal.position.z = 0.8116760
+        q = [-0.00377614, -0.795539, 0.321028, 0.513853]
+        xyz = [0.3, -0.35, 0.45]
 
-        xarm7.set_pose_target(pose_goal)
-        
+        # xarm7.set_orientation_target(q)
+        # print('set orientation target')
+        # xarm7.plan()
+        # xarm7.go()
+        # print('moved')
+
+        print('position tolerance: ', xarm7.get_goal_position_tolerance())
+        xarm7.set_goal_position_tolerance(0.001)
+        print('position tolerance: ', xarm7.get_goal_position_tolerance())
+        xarm7.set_position_target(xyz, end_effector_link = eef_link)
+        print('set position target')
+        xarm7.plan()
         xarm7.go(wait=True)
+        print('moved')
+        # rospy.sleep(0.05)
+
         xarm7.stop()
         xarm7.clear_pose_targets()
+
+        '''
+        For setting position targets
+        '''
 
         # Get the center of the circle
         current_pose = xarm7.get_current_pose().pose
         centerX = current_pose.position.x
         centerY = current_pose.position.y
+        Z = current_pose.position.z
         radius = 0.1
 
         # Create a circle waypoints
         waypoints = []
-        # theta = 0
-        # while theta <= 2 * pi:
-        #     target_pose = xarm7.get_current_pose().pose
-        #     target_pose.position.x = centerX + radius * cos(theta)
-        #     target_pose.position.y = centerY + radius * sin(theta)
-        #     waypoints.append(copy.deepcopy(target_pose))
-        #     theta += 0.01
-        #     print(theta)
-        target_pose = xarm7.get_current_pose().pose
-        theta = np.arange(0, 4*np.pi, 0.01)
-        x = centerX + radius * np.cos(theta)
-        y = centerY + radius * np.sin(theta)
-        for i in range(len(x)):
-            target_pose.position.x = x[i]
-            target_pose.position.y = y[i]
-            waypoints.append(copy.deepcopy(target_pose))
-        
-        for pos in waypoints:
-            xarm7.set_pose_target(pos)
-            xarm7.go(wait=True)
-        xarm7.stop()
-        xarm7.clear_pose_targets()
 
-           
+        theta = 0
+        while theta <= 2 * pi + 0.2:
+            X = centerX + radius * cos(theta)
+            Y = centerY + radius * sin(theta)
+            target_position = [X, Y, Z]
+            print(target_position)
+            theta += 0.1
+            print(theta)
+
+            xarm7.set_position_target(target_position)
+            xarm7.plan()
+            xarm7.go(wait=True)
+            # rospy.sleep(0.01)
+
+        # target_pose = xarm7.get_current_pose().pose
+        # theta = np.arange(0, 4*np.pi, 0.01)
+        # x = centerX + radius * np.cos(theta)
+        # y = centerY + radius * np.sin(theta)
+        # for i in range(len(x)):
+        #     target_pose.position.x = x[i]
+        #     target_pose.position.y = y[i]
+        #     waypoints.append(copy.deepcopy(target_pose))
+        
+        # for pos in waypoints:
+        #     xarm7.set_pose_target(pos)
+        #     xarm7.go(wait=True)
+        xarm7.stop()  
         rospy.sleep(1)
 
 # def draw_cirlce(r,center_vector,limit_size): #需要注意是单位是米
