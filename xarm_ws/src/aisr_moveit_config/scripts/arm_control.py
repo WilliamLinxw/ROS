@@ -73,7 +73,7 @@ def callback(data):
     print(angles_)
     if arm.connected and arm.state != 4:
         #def set_servo_angle_j(self, angles, speed=None, mvacc=None, mvtime=None, is_radian=None, **kwargs):
-       ret = arm.set_servo_angle(angle=angles_, is_radian = False, radius = 40, speed = 50)
+       ret = arm.set_servo_angle(angle=angles_, is_radian = False,radius = 40, speed = 30,wait=False)
        print('moved')  
     #    time.sleep(0.1)
 
@@ -111,7 +111,7 @@ if __name__ == '__main__':
 
     arm.set_mode(0)
     arm.set_state(0)
-    time.sleep(0.1)
+    time.sleep(0.01)
 
     rospy.init_node('listener', anonymous=True)
     rospy.Subscriber('/joint_states', JointState, callback)

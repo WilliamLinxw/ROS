@@ -295,7 +295,7 @@
       lower="-1.0"
       upper="1.0"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
@@ -354,7 +354,7 @@
       lower="-0.5"
       upper="0.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
@@ -413,7 +413,7 @@
       lower="-0.5"
       upper="0.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
@@ -472,7 +472,7 @@
       lower="-1.5"
       upper="1.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
@@ -531,7 +531,7 @@
       lower="-0.5"
       upper="0.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
@@ -590,7 +590,7 @@
       lower="0.0"
       upper="2.0"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="30.0" friction="0.3"/>
   </joint>
   <link
@@ -649,7 +649,7 @@
       lower="0.0"
       upper="1.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="10.0" friction="0.3"/>
   </joint>
   <link
@@ -708,7 +708,7 @@
       lower="-1.5"
       upper="1.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="10.0" friction="0.3"/>
   </joint>
   <link
@@ -767,7 +767,7 @@
       lower="0.0"
       upper="2.0"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="5.0" friction="0.3"/>
   </joint>
   <link
@@ -826,7 +826,7 @@
       lower="-1.5"
       upper="1.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="5.0" friction="0.3"/>
   </joint>
   
@@ -880,7 +880,7 @@
       lower="-3.14"
       upper="3.14"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="10.0" friction="0.3"/>
   </joint>
 
@@ -981,7 +981,7 @@
       lower="-1.6"
       upper="0"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
   <link
     name="Link11">
@@ -1039,7 +1039,7 @@
       lower="-1.7"
       upper="0"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
   <link
     name="Link2">
@@ -1097,7 +1097,7 @@
       lower="-1.6"
       upper="0"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
   <link
     name="Link22">
@@ -1155,7 +1155,7 @@
       lower="-1.7"
       upper="0"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
   <link
     name="Link3">
@@ -1213,7 +1213,7 @@
       lower="-1.6"
       upper="0"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
   <link
     name="Link33">
@@ -1271,7 +1271,7 @@
       lower="-1.7"
       upper="0"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
   <link
     name="Link4">
@@ -1329,7 +1329,7 @@
       lower="-1.6"
       upper="0"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
   <link
     name="Link44">
@@ -1387,7 +1387,7 @@
       lower="-1.7"
       upper="0"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
   <link
     name="Link5">
@@ -1445,7 +1445,7 @@
       lower="-1"
       upper="0.3"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
   <link
     name="Link51">
@@ -1503,7 +1503,7 @@
       lower="0"
       upper="0.4"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
   <link
     name="Link52">
@@ -1561,7 +1561,7 @@
       lower="-0.4"
       upper="0"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
   <link
     name="Link53">
@@ -1619,7 +1619,7 @@
       lower="-1"
       upper="0"
       effort="1"
-      velocity="1" />
+      velocity="100" />
   </joint>
 
   <link
@@ -1678,7 +1678,7 @@
       lower="-2.0"
       upper="0.0"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="30.0" friction="0.3"/>
   </joint>
   <link
@@ -1737,7 +1737,7 @@
       lower="0.0"
       upper="1.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="20.0" friction="0.3"/>
   </joint>
   <link
@@ -1796,7 +1796,7 @@
       lower="-1.5"
       upper="1.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="10.0" friction="0.3"/>
   </joint>
   <link
@@ -1855,7 +1855,7 @@
       lower="0.0"
       upper="2.0"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="10.0" friction="0.3"/>
   </joint>
   <link
@@ -1914,7 +1914,7 @@
       lower="-1.5"
       upper="1.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="1.0" friction="0.3"/>
   </joint>
   <link
@@ -1973,7 +1973,7 @@
       lower="-1.5"
       upper="1.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="0.1" friction="0.3"/>
   </joint>
   <link
@@ -2032,7 +2032,7 @@
       lower="-1.5"
       upper="1.5"
       effort="100.0"
-      velocity="1.0" />
+      velocity="100.0" />
     <dynamics damping="0.1" friction="0.3"/>
   </joint>
 
