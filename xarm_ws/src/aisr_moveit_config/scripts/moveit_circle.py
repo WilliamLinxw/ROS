@@ -74,8 +74,9 @@ class Arm(object):
     def move_circle_with_cartesian(self):
         xarm7 = self.move_group
         eef_link = self.eef_link
-        center = [0.417,-0.241,0.52]
+        center = [0.417,-0.241,0.50]
         radius = 0.06
+        
         xyz = [center[0] + radius ,center[1],center[2] + 0.03]
         xarm7.set_position_target(xyz, end_effector_link = eef_link)
         print('set position target')
@@ -140,7 +141,7 @@ class Arm(object):
     def move_circle(self):
         xarm7 = self.move_group
         eef_link = self.eef_link
-        center = [0.417,-0.241,0.52]
+        center = [0.417,-0.241,0.50]
         radius = 0.06
 
         # Go to a desired position where the center of the circle is
@@ -227,7 +228,7 @@ class Arm(object):
         eef_link = self.eef_link
 
         word_strokes = self.get_word_strokes()
-        start_pos = [0.417,-0.241,0.52]
+        start_pos = [0.417,-0.241,0.50]
 
         arm_strokes = self.get_arm_strokes([word_strokes],start_pos)
         # print("++++++arm_strokes",arm_strokes)
@@ -264,7 +265,7 @@ class Arm(object):
         eef_link = self.eef_link
 
         word_strokes = self.get_word_strokes()
-        start_pos = [0.417,-0.241,0.52]
+        start_pos = [0.417,-0.241,0.50]
 
         arm_strokes = self.get_arm_strokes([word_strokes],start_pos)
         # print("++++++arm_strokes",arm_strokes)
