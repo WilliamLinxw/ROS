@@ -1,0 +1,2 @@
+/home/lair-test/ros1_ws/xarm_ws/devel/./cmake.lock 95
+/home/lair-test/ros1_ws/aisr/devel/./cmake.lock 39

@@ -1,0 +1,30 @@
+<robot name="aisr">
+	<link name="base_link">
+    <link name="Waist_Link1">
+    <joint name="waist1" type="revolute">
+    <link name="Waist_Link2">
+    <joint name="waist2" type="revolute">
+    <link name="Waist_Link3">
+    <joint name="waist3" type="revolute">
+    <link name="Neck_Link1">
+    <joint name="neck1" type="revolute">
+
+
+gazebo_ros_control/pid_gains:
+  waist1_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  waist2_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  waist3_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  white1_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  white2_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  white3_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  white4_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  white5_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  neck1_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  neck2_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  black1_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  black2_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  black3_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  black4_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  black5_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  black6_joint: {p: 2400.0, d: 18.0, i: 800.0}
+  black7_joint: {p: 2400.0, d: 18.0, i: 800.0}

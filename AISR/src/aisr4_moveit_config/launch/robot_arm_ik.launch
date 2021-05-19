@@ -1,0 +1,13 @@
+<launch>
+  <include file="$(find aisr4_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+
+  <node name="robot_arm_ik"
+        pkg="aisr4_moveit_config"
+        type="robot_arm_ik"
+        respawn="false" output="screen">
+    <rosparam command="load"
+              file="$(find aisr4_moveit_config)/config/kinematics.yaml"/>
+  </node>
+</launch>

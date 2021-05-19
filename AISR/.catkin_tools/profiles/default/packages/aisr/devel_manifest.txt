@@ -1,0 +1,5 @@
+aisr
+/home/lair-test/ros1_ws/aisr/devel/.private/aisr/cmake.lock /home/lair-test/ros1_ws/aisr/devel/./cmake.lock
+/home/lair-test/ros1_ws/aisr/devel/.private/aisr/lib/pkgconfig/aisr.pc /home/lair-test/ros1_ws/aisr/devel/lib/pkgconfig/aisr.pc
+/home/lair-test/ros1_ws/aisr/devel/.private/aisr/share/aisr/cmake/aisrConfig-version.cmake /home/lair-test/ros1_ws/aisr/devel/share/aisr/cmake/aisrConfig-version.cmake
+/home/lair-test/ros1_ws/aisr/devel/.private/aisr/share/aisr/cmake/aisrConfig.cmake /home/lair-test/ros1_ws/aisr/devel/share/aisr/cmake/aisrConfig.cmake

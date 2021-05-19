@@ -1,0 +1,14 @@
+controller_list:
+  - name: fake_white_arm_controller
+    joints:
+      - white_joint1
+      - white_joint2
+      - white_joint3
+      - white_joint4
+      - white_joint5
+  - name: fake_white_hand_controller
+    joints:
+      - white_finger_joint1
+initial:  # Define initial robot poses.
+  - group: white_arm
+    pose: write_position

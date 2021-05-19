@@ -1,0 +1,14 @@
+controller_list:
+  - name: fake_xarm7_controller
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+  - name: fake_xarm_hand_controller
+    joints:
+      []
+initial:  # Define initial robot poses.
+  - group: xarm7
+    pose: home
