@@ -68,5 +68,10 @@
         "timer": "cpp",
         "drawable": "cpp",
         "image": "cpp"
-    }
+    },
+    "ros.distro": "melodic",
+    "python.autoComplete.extraPaths": [
+        "/home/caesar/Desktop/ROS/xarm_ws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ]
 }

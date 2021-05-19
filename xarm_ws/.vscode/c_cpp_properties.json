@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/caesar/Desktop/ROS/xarm_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/opt/ros/melodic/share/fetch_gazebo/include/**",
+        "/home/caesar/Desktop/ROS/xarm_ws/src/xarm_api/include/**",
+        "/home/caesar/Desktop/ROS/xarm_ws/src/xarm_controller/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}
